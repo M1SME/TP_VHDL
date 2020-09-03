@@ -1,6 +1,7 @@
-Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 11
-912
+1000
 OFF
 OFF
 OFF
@@ -25,8 +26,8 @@ db|PorteET.(0).cnf
 db|PorteET.(0).cnf
 # case_insensitive
 # source_file
-PorteET.bdf
-72b94d49a4b9c02dffb8556a95b4d86
+porteet.bdf
+6a27c689bc507293db1379ec4ce0d14c
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

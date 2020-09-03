@@ -1,0 +1,18 @@
+|Additionneur
+ARst_N_I => Leds_O[0]~reg0.ACLR
+ARst_N_I => Leds_O[1]~reg0.ACLR
+ARst_N_I => Leds_O[2]~reg0.ACLR
+Clk_I => Leds_O[0]~reg0.CLK
+Clk_I => Leds_O[1]~reg0.CLK
+Clk_I => Leds_O[2]~reg0.CLK
+Valeur1[0] => Add0.IN3
+Valeur1[1] => Add0.IN2
+Valeur1[2] => Add0.IN1
+Valeur2[0] => Add0.IN6
+Valeur2[1] => Add0.IN5
+Valeur2[2] => Add0.IN4
+Leds_O[0] <= Leds_O[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Leds_O[1] <= Leds_O[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Leds_O[2] <= Leds_O[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
