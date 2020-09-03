@@ -257,3 +257,22 @@ VECTOR("C:/Users/Cyprien/Documents/GIT/TP_VHDL/Q2_9/Addi/Additionneur.vwf")
 		FLAG = N;
 	}
 }
+
+VECTOR("C:/Users/Cyprien/Documents/GIT/TP_VHDL/Q2_9/Addi/Compteur_bcd.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 10000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+}

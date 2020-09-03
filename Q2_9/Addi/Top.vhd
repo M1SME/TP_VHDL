@@ -9,9 +9,8 @@ entity Top is
     
      ARst_N_I    :   in std_logic;
      Clk_I        :   in std_logic;
-     Led		: out std_logic
-    
-    
+     Led		: out std_logic;
+     led_bcd    : out std_logic_vector(3 downto 0)
     );
 end entity Top;
 
@@ -23,7 +22,7 @@ signal Clk1Hz : std_logic ;
 
     begin
    
- Add: process(Clk1Hz, ARst_N_I)
+ top: process(Clk_I, ARst_N_I)
 
   begin
    
@@ -32,17 +31,24 @@ signal Clk1Hz : std_logic ;
   	Led <= '0';
     elsif  rising_edge(Clk_I) then
     
-	         Leds <= Valeur1 + Valeur2 ;
+	         Led <= Clk1Hz ;
 
   end if;
-  end process Add;
-   
-
-  U0_div : entity work.div
+  end process top;
+  
+  U0_div : entity work.diviseur
   port map
   (
       Clk_O         =>  Clk1Hz,
       Clk_I         =>  Clk_I
+  );
+  
+    U1_cpt : entity work.compteur_bcd
+  port map
+  (
+	  ARst_N_I	=>	ARst_N_I,
+      Clk_I         =>  Clk1Hz,
+      Cpt         =>  led_bcd
   );
 
    
