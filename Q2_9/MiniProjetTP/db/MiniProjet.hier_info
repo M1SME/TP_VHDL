@@ -1,0 +1,58 @@
+|Top
+ARst_N_I => compteur_bcd:U1_cpt.ARst_N_I
+ARst_N_I => Led~reg0.ACLR
+Clk_I => diviseur:U0_div.Clk_I
+Clk_I => Led~reg0.CLK
+Led <= Led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_bcd[0] <= compteur_bcd:U1_cpt.Cpt[0]
+led_bcd[1] <= compteur_bcd:U1_cpt.Cpt[1]
+led_bcd[2] <= compteur_bcd:U1_cpt.Cpt[2]
+led_bcd[3] <= compteur_bcd:U1_cpt.Cpt[3]
+
+
+|Top|diviseur:U0_div
+Clk_I => clk_Oo.CLK
+Clk_I => cpt[0].CLK
+Clk_I => cpt[1].CLK
+Clk_I => cpt[2].CLK
+Clk_I => cpt[3].CLK
+Clk_I => cpt[4].CLK
+Clk_I => cpt[5].CLK
+Clk_I => cpt[6].CLK
+Clk_I => cpt[7].CLK
+Clk_I => cpt[8].CLK
+Clk_I => cpt[9].CLK
+Clk_I => cpt[10].CLK
+Clk_I => cpt[11].CLK
+Clk_I => cpt[12].CLK
+Clk_I => cpt[13].CLK
+Clk_I => cpt[14].CLK
+Clk_I => cpt[15].CLK
+Clk_I => cpt[16].CLK
+Clk_I => cpt[17].CLK
+Clk_I => cpt[18].CLK
+Clk_I => cpt[19].CLK
+Clk_I => cpt[20].CLK
+Clk_I => cpt[21].CLK
+Clk_I => cpt[22].CLK
+Clk_I => cpt[23].CLK
+Clk_I => cpt[24].CLK
+Clk_I => cpt[25].CLK
+Clk_O <= clk_Oo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|compteur_bcd:U1_cpt
+Clk_I => Cpt_interne[0].CLK
+Clk_I => Cpt_interne[1].CLK
+Clk_I => Cpt_interne[2].CLK
+Clk_I => Cpt_interne[3].CLK
+Cpt[0] <= Cpt_interne[0].DB_MAX_OUTPUT_PORT_TYPE
+Cpt[1] <= Cpt_interne[1].DB_MAX_OUTPUT_PORT_TYPE
+Cpt[2] <= Cpt_interne[2].DB_MAX_OUTPUT_PORT_TYPE
+Cpt[3] <= Cpt_interne[3].DB_MAX_OUTPUT_PORT_TYPE
+ARst_N_I => Cpt_interne[0].ACLR
+ARst_N_I => Cpt_interne[1].ACLR
+ARst_N_I => Cpt_interne[2].ACLR
+ARst_N_I => Cpt_interne[3].ACLR
+
+
