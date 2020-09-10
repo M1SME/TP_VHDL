@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MiniProjet
-Mon Sep 07 08:11:04 2020
+Mon Sep 07 09:11:21 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -14,7 +14,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -40,16 +41,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 07 08:11:04 2020        ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 07 09:11:21 2020        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; MiniProjet                                   ;
 ; Top-level Entity Name              ; Top                                          ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 40                                           ;
-;     Total combinational functions  ; 39                                           ;
-;     Dedicated logic registers      ; 32                                           ;
-; Total registers                    ; 32                                           ;
-; Total pins                         ; 7                                            ;
+; Total logic elements               ; 54                                           ;
+;     Total combinational functions  ; 53                                           ;
+;     Dedicated logic registers      ; 39                                           ;
+; Total registers                    ; 39                                           ;
+; Total pins                         ; 14                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -155,6 +156,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Compteur_bcd.vhd                 ; yes             ; User VHDL File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/Q2_9/MiniProjetTP/Compteur_bcd.vhd ;
 ; Diviseur.vhd                     ; yes             ; User VHDL File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/Q2_9/MiniProjetTP/Diviseur.vhd     ;
 ; Top.vhd                          ; yes             ; User VHDL File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/Q2_9/MiniProjetTP/Top.vhd          ;
+; decodeur.vhd                     ; yes             ; User VHDL File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/Q2_9/MiniProjetTP/decodeur.vhd     ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+
 
 
@@ -163,27 +165,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 40    ;
+; Estimated Total logic elements              ; 54    ;
 ;                                             ;       ;
-; Total combinational functions               ; 39    ;
+; Total combinational functions               ; 53    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
-;     -- 3 input functions                    ; 3     ;
+;     -- 4 input functions                    ; 22    ;
+;     -- 3 input functions                    ; 5     ;
 ;     -- <=2 input functions                  ; 26    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 14    ;
+;     -- normal mode                          ; 28    ;
 ;     -- arithmetic mode                      ; 25    ;
 ;                                             ;       ;
-; Total registers                             ; 32    ;
-;     -- Dedicated logic registers            ; 32    ;
+; Total registers                             ; 39    ;
+;     -- Dedicated logic registers            ; 39    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 7     ;
+; I/O pins                                    ; 14    ;
 ; Maximum fan-out node                        ; Clk_I ;
 ; Maximum fan-out                             ; 28    ;
-; Total fan-out                               ; 200   ;
-; Average fan-out                             ; 2.56  ;
+; Total fan-out                               ; 282   ;
+; Average fan-out                             ; 2.66  ;
 +---------------------------------------------+-------+
 
 
@@ -192,8 +194,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; |Top                       ; 39 (0)            ; 32 (1)       ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |Top                     ; work         ;
+; |Top                       ; 53 (0)            ; 39 (1)       ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Top                     ; work         ;
 ;    |compteur_bcd:U1_cpt|   ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|compteur_bcd:U1_cpt ;              ;
+;    |decodeur:Seg|          ; 14 (14)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|decodeur:Seg        ;              ;
 ;    |diviseur:U0_div|       ; 35 (35)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top|diviseur:U0_div     ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -204,14 +207,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 39    ;
 ; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Clear ; 12    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; decodeur:Seg|segments[0]               ; 2       ;
+; decodeur:Seg|segments[1]               ; 2       ;
+; decodeur:Seg|segments[2]               ; 2       ;
+; decodeur:Seg|segments[3]               ; 2       ;
+; decodeur:Seg|segments[4]               ; 2       ;
+; decodeur:Seg|segments[5]               ; 2       ;
+; decodeur:Seg|segments[6]               ; 2       ;
+; Total number of inverted registers = 7 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------+
@@ -220,7 +239,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Sep 07 08:11:01 2020
+    Info: Processing started: Mon Sep 07 09:11:18 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MiniProjet -c MiniProjet
 Info: Found 2 design units, including 1 entities, in source file additionneur.vhd
     Info: Found design unit 1: Additionneur-rtl
@@ -234,20 +253,26 @@ Info: Found 2 design units, including 1 entities, in source file diviseur.vhd
 Info: Found 2 design units, including 1 entities, in source file top.vhd
     Info: Found design unit 1: Top-rtl
     Info: Found entity 1: Top
+Info: Found 2 design units, including 1 entities, in source file decodeur.vhd
+    Info: Found design unit 1: decodeur-rtl
+    Info: Found entity 1: decodeur
 Info: Elaborating entity "Top" for the top level hierarchy
 Info: Elaborating entity "diviseur" for hierarchy "diviseur:U0_div"
 Info: Elaborating entity "compteur_bcd" for hierarchy "compteur_bcd:U1_cpt"
 Warning (10492): VHDL Process Statement warning at Compteur_bcd.vhd(38): signal "Cpt_interne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "decodeur" for hierarchy "decodeur:Seg"
+Info: Registers with preset signals will power-up high
+Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning: Ignored assignments for entity "MiniProjet" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity MiniProjet -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity MiniProjet -section_id "Root Region" was ignored
-Info: Implemented 47 device resources after synthesis - the final resource count might be different
+Info: Implemented 68 device resources after synthesis - the final resource count might be different
     Info: Implemented 2 input pins
-    Info: Implemented 5 output pins
-    Info: Implemented 40 logic cells
+    Info: Implemented 12 output pins
+    Info: Implemented 54 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 251 megabytes
-    Info: Processing ended: Mon Sep 07 08:11:04 2020
+    Info: Peak virtual memory: 253 megabytes
+    Info: Processing ended: Mon Sep 07 09:11:21 2020
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

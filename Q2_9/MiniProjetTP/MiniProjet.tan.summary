@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.479 ns
-From           : compteur_bcd:U1_cpt|Cpt_interne[2]
-To             : led_bcd[2]
+Actual Time    : 11.960 ns
+From           : decodeur:Seg|segments[4]
+To             : segments[4]
 From Clock     : Clk_I
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'Clk_I'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 234.96 MHz ( period = 4.256 ns )
-From           : diviseur:U0_div|cpt[14]
-To             : diviseur:U0_div|clk_Oo
+Actual Time    : 266.24 MHz ( period = 3.756 ns )
+From           : diviseur:U0_div|cpt[7]
+To             : diviseur:U0_div|cpt[0]
 From Clock     : Clk_I
 To Clock       : Clk_I
 Failed Paths   : 0

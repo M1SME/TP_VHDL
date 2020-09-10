@@ -30,7 +30,7 @@ begin
 		elsif  Clk_I = '1' and Clk_I'event then
 		
 				 Cpt_interne <= Cpt_interne + 1 ;
-				 if Cpt_interne >= 10 then 
+				 if Cpt_interne >= 9 then 
 					Cpt_interne <= "0000";
 
 				end if;

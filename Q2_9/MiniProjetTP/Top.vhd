@@ -10,7 +10,8 @@ entity Top is
      ARst_N_I    :   in std_logic;
      Clk_I        :   in std_logic;
      Led		: out std_logic;
-     led_bcd    : out std_logic_vector(3 downto 0)
+     led_bcd    : out std_logic_vector(3 downto 0);
+     segments      :   out std_logic_vector(6 downto 0)
     );
 end entity Top;
 
@@ -19,6 +20,7 @@ end entity Top;
 architecture rtl of Top is
 
 signal Clk1Hz : std_logic ;
+signal Cpt10  :  std_logic_vector(3 downto 0);
 
     begin
    
@@ -48,8 +50,19 @@ signal Clk1Hz : std_logic ;
   (
 	  ARst_N_I	=>	ARst_N_I,
       Clk_I         =>  Clk1Hz,
-      Cpt         =>  led_bcd
+      Cpt         =>  Cpt10
   );
+  
+   
+    led_bcd <=  Cpt10;
+   Seg : entity work.decodeur 
+    port map
+    (
+        Clk_I       => Clk1Hz ,
+		ARst_N_I    =>   ARst_N_I,
+		Cpt10      => Cpt10,
+		segments    => segments
+	);
 
    
 end architecture rtl;
