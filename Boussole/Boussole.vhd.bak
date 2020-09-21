@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use ieee.numeric_std;
 use ieee.std_logic_unsigned.all;
 
 
@@ -15,7 +16,14 @@ entity boussole is
         
         DATA_VALID      :   out std_logic;
         OUT_1s          :   out std_logic;
-        DATA_Compas     :   out std_logic_vector(8 downto 0)
+        DATA_Compas     :   out std_logic_vector(8 downto 0);
+        
+        --debug 
+        debug_pwm 			:	out std_logic;
+        ETat_HIGHT	:	out std_logic;
+        ETAT_LOW     	:	out std_logic   
+        
+
          
     );
 end entity boussole;
@@ -25,99 +33,38 @@ end entity boussole;
 architecture rtl of boussole is
 
 
- constant  angle		:	integer:=365;
- Type etats is (Etatcontinu, Etatmonocoup );
- signal EtatPresent : etats;
- signal EtatSuivant : etats; 
+
  signal  Acquisition : std_logic;
  signal  Acquisition1s : std_logic;
-  signal CLK_1Hz : std_logic;
+ signal CLK_1Hz : std_logic;
  signal Clk1000Hz: std_logic;
- signal  cpt     :  std_logic_vector(8 downto 0);
-  signal  cptHigth     :  std_logic_vector(8 downto 0);
-signal PWM_HIGHT      :  std_logic;
+ signal  cptHigth     :  std_logic_vector(8 downto 0);
+ --signal PWM_HIGHT      :  std_logic;
+ signal dataok      :  std_logic;
+  signal ok1s      :  std_logic;
+
+
+signal PWM_Hight : std_logic;
+ 
+ -- debug 
+  constant  freq 		:	integer:=5; ---ajuster freq
+  constant  duty		:	integer:=20;
+ -- signal IN_PWM_COMPAS      :  std_logic;
+
 
 begin
 
--- Machine ETATs 
+Acquisition1s <= '1' when ((continu  = '1')) else '0';
+Acquisition <='1' when ((continu  = '0')and (start_stop = '0')) else '0';
 
-      EtatSuivant  <=  Etatmonocoup  when  (EtatPresent = Etatcontinu) and (continu = '0')  else 
-				        Etatcontinu   when  (EtatPresent = Etatmonocoup ) and  (continu = '1') else
-	  EtatPresent;
+ok1s <= '1' when (CLK_1Hz = '1' and  Acquisition1s = '1') else '0'; 
 
- Acquisition  <= '1'  when ((EtatPresent = Etatmonocoup )and (start_stop = '1')) else '0';
- Acquisition1s  <= '1'  when (EtatPresent = Etatcontinu ) else '0';
---Fifo1RdEn <= '1' when ((EtatPresent = un) and ( dFifo1Empty ='0'))    else '0';
---dataTX_EN <= ddFifo1RdEn;
-
-
-
-MEF : Process(CLK_50M ,RAZ_N)
-Begin 
-  if RAZ_N = '0' then
-		EtatPresent <= Etatmonocoup;
-		-- INIT 
-	elsif CLK_50M'event and CLK_50M = '1' then 
-		EtatPresent <= EtatSuivant;
-	end if;
-
-end process MEF;
-
--- Fin Machine ETATs 
+DATA_VALID <=  '1' when (ok1s='1' or Acquisition = '1') else '0';
 
 
 
 
-
-pAcquisition : Process(CLK_50M, Acquisition, RAZ_N)
-Begin 
-  if RAZ_N = '0' then
-		data_valid <= '0';
-		-- INIT 
-		elsif  ((CLK_50M = '1' and CLK_50M'event) and (Acquisition = '1')) then
-	
-			data_valid <= '1';
-		
-	end if;
-end process pAcquisition;
-
-
-
-pAcquisition1s : Process(CLK_1Hz,RAZ_N, Clk1000Hz )
-Begin 
-  if RAZ_N = '0' then
-			data_valid <= '0';
-		-- INIT 
-		elsif  ((CLK_1Hz = '1' and CLK_1Hz'event) and Acquisition1s = '1') then
-			
-		data_valid <= '1';
-
-	end if;
-end process pAcquisition1s;
-
-
-
-
-
-
-
-
-DetectFrontM : Process(RAZ_N, IN_PWM_COMPAS )
-Begin 
-  if RAZ_N = '0' then
-			PWM_HIGHT <= '0';
-		elsif  ((IN_PWM_COMPAS = '1' and IN_PWM_COMPAS'event)) then
-		PWM_HIGHT <= '1';
-		elsif  ((IN_PWM_COMPAS = '0' and IN_PWM_COMPAS'event)) then
-		PWM_HIGHT <= '0';
-		
-	end if;
-end process DetectFrontM;
-
-
-
-
-Calcul : Process(RAZ_N, Clk1000Hz )
+Calcul : Process(RAZ_N, Clk1000Hz, IN_PWM_COMPAS )
 Begin 
   if RAZ_N = '0' then
 			DATA_Compas <= (others => '0');
@@ -125,15 +72,17 @@ Begin
 		-- INIT 
 	
 		elsif (Clk1000Hz = '1' and Clk1000Hz'event) then
-			cpt <= cpt +1;
-			if(PWM_HIGHT <= '1') then 
+			
+			if( IN_PWM_COMPAS = '1' ) then 
 			cptHigth <= cptHigth +1;
 			end if;
-			if(cpt > 36)then 
-			DATA_Compas <= 10/to_integer(signed(cptHigth));
-			cpt <= (others => '0');
+			if( IN_PWM_COMPAS = '0' ) then 
+			DATA_compas <= cptHigth ;
 			cptHigth <= (others => '0');
 			end if;
+			
+			 
+			
 
 	end if;
 end process Calcul;
@@ -143,19 +92,32 @@ end process Calcul;
 
 -- Components
 
-  U0_div : entity work.diviseur
+  U0_div1 : entity work.diviseur
   port map
   (
-      Clk_O         =>  Clk1Hz,
+      Clk_O         =>  CLK_1Hz,
       Clk_I         =>  CLK_50M
   );
   
-    U0_div : entity work.diviseur1ms
+    U0_div1000 : entity work.diviseur1ms
   port map
   (
       Clk_O         =>  Clk1000Hz,
       Clk_I         =>  CLK_50M
   );
+  
+  -- debug 
+  
+ --     DU0_PWM : entity work.pwm
+  --port map
+  --(
+  --     Clk_I       => CLK_50M,
+--		Pwm		    => IN_PWM_COMPAS,
+--		ARst_N_I    =>RAZ_N,
+		--freq 		=>freq,
+ --       duty		=>duty
+--  );
 
 
+--debug_pwm <= IN_PWM_COMPAS;
 end architecture rtl;

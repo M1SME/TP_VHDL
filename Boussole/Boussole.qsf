@@ -36,19 +36,43 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix II"
-set_global_assignment -name DEVICE AUTO
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
 set_global_assignment -name TOP_LEVEL_ENTITY Boussole
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:05:30  SEPTEMBER 14, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
-set_global_assignment -name VHDL_FILE Boussole.vhd
-set_global_assignment -name VHDL_FILE diviseur.vhd
-set_global_assignment -name VHDL_FILE diviseur1ms.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VHDL_FILE Boussole.vhd
+set_global_assignment -name VHDL_FILE diviseur.vhd
+set_global_assignment -name VHDL_FILE diviseur1ms.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Boussole.vwf
+set_global_assignment -name VHDL_FILE pwm.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AE22 -to DATA_Compas[0]
+set_location_assignment PIN_AF22 -to DATA_Compas[1]
+set_location_assignment PIN_W19 -to DATA_Compas[2]
+set_location_assignment PIN_V18 -to DATA_Compas[3]
+set_location_assignment PIN_U18 -to DATA_Compas[4]
+set_location_assignment PIN_U17 -to DATA_Compas[5]
+set_location_assignment PIN_AA20 -to DATA_Compas[6]
+set_location_assignment PIN_Y18 -to DATA_Compas[7]
+set_location_assignment PIN_U4 -to continu
+set_location_assignment PIN_V2 -to RAZ_N
+set_location_assignment PIN_N2 -to CLK_50M
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_location_assignment PIN_Y12 -to DATA_Compas[8]
+set_location_assignment PIN_G26 -to start_stop
+set_global_assignment -name MISC_FILE "C:/Users/Cyprien/Documents/GIT/TP_VHDL/Boussole/Boussole.dpf"
+set_location_assignment PIN_T25 -to ETat_HIGHT
+set_location_assignment PIN_K25 -to ETAT_LOW
+set_location_assignment PIN_W25 -to debug_pwm
+set_location_assignment PIN_W23 -to IN_PWM_COMPAS
+set_location_assignment PIN_V23 -to DATA_VALID
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

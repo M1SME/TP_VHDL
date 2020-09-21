@@ -1,0 +1,506 @@
+Simulator report for Boussole
+Tue Sep 15 16:33:59 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3.0 ms       ;
+; Simulation Netlist Size     ; 181 nodes    ;
+; Simulation Coverage         ;      51.91 % ;
+; Total Number of Transitions ; 4238700      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      51.91 % ;
+; Total nodes checked                                 ; 181          ;
+; Total output ports checked                          ; 235          ;
+; Total output ports with complete 1/0-value coverage ; 122          ;
+; Total output ports with no 1/0-value coverage       ; 110          ;
+; Total output ports with no 1-value coverage         ; 110          ;
+; Total output ports with no 0-value coverage         ; 113          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                      ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; Node Name                                             ; Output Port Name                                      ; Output Port Type ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; |boussole|cptHigth[0]                                 ; |boussole|cptHigth[0]                                 ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[2]                     ; |boussole|pwm:DU0_PWM|cpt_duty[2]                     ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[4]                     ; |boussole|pwm:DU0_PWM|cpt_duty[4]                     ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[3]                     ; |boussole|pwm:DU0_PWM|cpt_duty[3]                     ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[6]                     ; |boussole|pwm:DU0_PWM|cpt_duty[6]                     ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[5]                     ; |boussole|pwm:DU0_PWM|cpt_duty[5]                     ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[1]                     ; |boussole|pwm:DU0_PWM|cpt_duty[1]                     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[6]               ; |boussole|diviseur1ms:U0_div1000|cpt[6]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[5]               ; |boussole|diviseur1ms:U0_div1000|cpt[5]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[4]               ; |boussole|diviseur1ms:U0_div1000|cpt[4]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[3]               ; |boussole|diviseur1ms:U0_div1000|cpt[3]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[7]               ; |boussole|diviseur1ms:U0_div1000|cpt[7]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[8]               ; |boussole|diviseur1ms:U0_div1000|cpt[8]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[12]              ; |boussole|diviseur1ms:U0_div1000|cpt[12]              ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[11]              ; |boussole|diviseur1ms:U0_div1000|cpt[11]              ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[9]               ; |boussole|diviseur1ms:U0_div1000|cpt[9]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[10]              ; |boussole|diviseur1ms:U0_div1000|cpt[10]              ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[14]              ; |boussole|diviseur1ms:U0_div1000|cpt[14]              ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[13]              ; |boussole|diviseur1ms:U0_div1000|cpt[13]              ; regout           ;
+; |boussole|Add0~1                                      ; |boussole|Add0~1                                      ; sumout           ;
+; |boussole|Add0~1                                      ; |boussole|Add0~2                                      ; cout             ;
+; |boussole|pwm:DU0_PWM|cpt_duty[0]                     ; |boussole|pwm:DU0_PWM|cpt_duty[0]                     ; regout           ;
+; |boussole|pwm:DU0_PWM|Add1~1                          ; |boussole|pwm:DU0_PWM|Add1~1                          ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~1                          ; |boussole|pwm:DU0_PWM|Add1~2                          ; cout             ;
+; |boussole|pwm:DU0_PWM|Add1~5                          ; |boussole|pwm:DU0_PWM|Add1~5                          ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~5                          ; |boussole|pwm:DU0_PWM|Add1~6                          ; cout             ;
+; |boussole|pwm:DU0_PWM|Add1~9                          ; |boussole|pwm:DU0_PWM|Add1~9                          ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~9                          ; |boussole|pwm:DU0_PWM|Add1~10                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add1~13                         ; |boussole|pwm:DU0_PWM|Add1~13                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~13                         ; |boussole|pwm:DU0_PWM|Add1~14                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add1~17                         ; |boussole|pwm:DU0_PWM|Add1~17                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~17                         ; |boussole|pwm:DU0_PWM|Add1~18                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add1~21                         ; |boussole|pwm:DU0_PWM|Add1~21                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~21                         ; |boussole|pwm:DU0_PWM|Add1~22                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add1~25                         ; |boussole|pwm:DU0_PWM|Add1~25                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~25                         ; |boussole|pwm:DU0_PWM|Add1~26                         ; cout             ;
+; |boussole|pwm:DU0_PWM|cpt[2]                          ; |boussole|pwm:DU0_PWM|cpt[2]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[1]                          ; |boussole|pwm:DU0_PWM|cpt[1]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[3]                          ; |boussole|pwm:DU0_PWM|cpt[3]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[4]                          ; |boussole|pwm:DU0_PWM|cpt[4]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[5]                          ; |boussole|pwm:DU0_PWM|cpt[5]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[7]                          ; |boussole|pwm:DU0_PWM|cpt[7]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[6]                          ; |boussole|pwm:DU0_PWM|cpt[6]                          ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[2]               ; |boussole|diviseur1ms:U0_div1000|cpt[2]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[1]               ; |boussole|diviseur1ms:U0_div1000|cpt[1]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[0]               ; |boussole|diviseur1ms:U0_div1000|cpt[0]               ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~1               ; |boussole|diviseur1ms:U0_div1000|Add0~1               ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~1               ; |boussole|diviseur1ms:U0_div1000|Add0~2               ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~5               ; |boussole|diviseur1ms:U0_div1000|Add0~5               ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~5               ; |boussole|diviseur1ms:U0_div1000|Add0~6               ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~9               ; |boussole|diviseur1ms:U0_div1000|Add0~9               ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~9               ; |boussole|diviseur1ms:U0_div1000|Add0~10              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~13              ; |boussole|diviseur1ms:U0_div1000|Add0~13              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~13              ; |boussole|diviseur1ms:U0_div1000|Add0~14              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~17              ; |boussole|diviseur1ms:U0_div1000|Add0~17              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~17              ; |boussole|diviseur1ms:U0_div1000|Add0~18              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~21              ; |boussole|diviseur1ms:U0_div1000|Add0~21              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~21              ; |boussole|diviseur1ms:U0_div1000|Add0~22              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~25              ; |boussole|diviseur1ms:U0_div1000|Add0~25              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~25              ; |boussole|diviseur1ms:U0_div1000|Add0~26              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~29              ; |boussole|diviseur1ms:U0_div1000|Add0~29              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~29              ; |boussole|diviseur1ms:U0_div1000|Add0~30              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~33              ; |boussole|diviseur1ms:U0_div1000|Add0~33              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~33              ; |boussole|diviseur1ms:U0_div1000|Add0~34              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~37              ; |boussole|diviseur1ms:U0_div1000|Add0~37              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~37              ; |boussole|diviseur1ms:U0_div1000|Add0~38              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~41              ; |boussole|diviseur1ms:U0_div1000|Add0~41              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~41              ; |boussole|diviseur1ms:U0_div1000|Add0~42              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~45              ; |boussole|diviseur1ms:U0_div1000|Add0~45              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~45              ; |boussole|diviseur1ms:U0_div1000|Add0~46              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~49              ; |boussole|diviseur1ms:U0_div1000|Add0~49              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~49              ; |boussole|diviseur1ms:U0_div1000|Add0~50              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~53              ; |boussole|diviseur1ms:U0_div1000|Add0~53              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~53              ; |boussole|diviseur1ms:U0_div1000|Add0~54              ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~57              ; |boussole|diviseur1ms:U0_div1000|Add0~57              ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~57              ; |boussole|diviseur1ms:U0_div1000|Add0~58              ; cout             ;
+; |boussole|pwm:DU0_PWM|cpt[0]                          ; |boussole|pwm:DU0_PWM|cpt[0]                          ; regout           ;
+; |boussole|pwm:DU0_PWM|Add0~1                          ; |boussole|pwm:DU0_PWM|Add0~1                          ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~1                          ; |boussole|pwm:DU0_PWM|Add0~2                          ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~5                          ; |boussole|pwm:DU0_PWM|Add0~5                          ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~5                          ; |boussole|pwm:DU0_PWM|Add0~6                          ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~9                          ; |boussole|pwm:DU0_PWM|Add0~9                          ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~9                          ; |boussole|pwm:DU0_PWM|Add0~10                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~13                         ; |boussole|pwm:DU0_PWM|Add0~13                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~13                         ; |boussole|pwm:DU0_PWM|Add0~14                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~17                         ; |boussole|pwm:DU0_PWM|Add0~17                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~17                         ; |boussole|pwm:DU0_PWM|Add0~18                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~21                         ; |boussole|pwm:DU0_PWM|Add0~21                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~21                         ; |boussole|pwm:DU0_PWM|Add0~22                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~25                         ; |boussole|pwm:DU0_PWM|Add0~25                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~25                         ; |boussole|pwm:DU0_PWM|Add0~26                         ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~29                         ; |boussole|pwm:DU0_PWM|Add0~29                         ; sumout           ;
+; |boussole|pwm:DU0_PWM|clk_duty_Oo~1                   ; |boussole|pwm:DU0_PWM|clk_duty_Oo~1                   ; combout          ;
+; |boussole|DATA_VALID~reg0                             ; |boussole|DATA_VALID~reg0                             ; regout           ;
+; |boussole|pwm:DU0_PWM|clk_duty_Oo                     ; |boussole|pwm:DU0_PWM|clk_duty_Oo                     ; regout           ;
+; |boussole|dataok                                      ; |boussole|dataok                                      ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|clk_Oo               ; |boussole|diviseur1ms:U0_div1000|clk_Oo               ; regout           ;
+; |boussole|pwm:DU0_PWM|LessThan3~0                     ; |boussole|pwm:DU0_PWM|LessThan3~0                     ; combout          ;
+; |boussole|pwm:DU0_PWM|clk_duty_Oo~0                   ; |boussole|pwm:DU0_PWM|clk_duty_Oo~0                   ; combout          ;
+; |boussole|pwm:DU0_PWM|clk_Oo                          ; |boussole|pwm:DU0_PWM|clk_Oo                          ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~0          ; |boussole|diviseur1ms:U0_div1000|LessThan0~0          ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~1          ; |boussole|diviseur1ms:U0_div1000|LessThan0~1          ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~4          ; |boussole|diviseur1ms:U0_div1000|LessThan0~4          ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|clk_Oo~0             ; |boussole|diviseur1ms:U0_div1000|clk_Oo~0             ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan3~1                     ; |boussole|pwm:DU0_PWM|LessThan3~1                     ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~0                     ; |boussole|pwm:DU0_PWM|LessThan0~0                     ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~1                     ; |boussole|pwm:DU0_PWM|LessThan0~1                     ; combout          ;
+; |boussole|pwm:DU0_PWM|clk_Oo~0                        ; |boussole|pwm:DU0_PWM|clk_Oo~0                        ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~4                     ; |boussole|pwm:DU0_PWM|LessThan0~4                     ; combout          ;
+; |boussole|cptHigth[0]~_wirecell                       ; |boussole|cptHigth[0]~_wirecell                       ; combout          ;
+; |boussole|DATA_VALID                                  ; |boussole|DATA_VALID                                  ; padio            ;
+; |boussole|pwm                                         ; |boussole|pwm                                         ; padio            ;
+; |boussole|continu                                     ; |boussole|continu~corein                              ; combout          ;
+; |boussole|start_stop                                  ; |boussole|start_stop~corein                           ; combout          ;
+; |boussole|CLK_50M                                     ; |boussole|CLK_50M~corein                              ; combout          ;
+; |boussole|CLK_50M~clkctrl                             ; |boussole|CLK_50M~clkctrl                             ; outclk           ;
+; |boussole|diviseur1ms:U0_div1000|clk_Oo~clkctrl       ; |boussole|diviseur1ms:U0_div1000|clk_Oo~clkctrl       ; outclk           ;
+; |boussole|pwm:DU0_PWM|clk_Oo~clkctrl                  ; |boussole|pwm:DU0_PWM|clk_Oo~clkctrl                  ; outclk           ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~4DUPLICATE ; |boussole|diviseur1ms:U0_div1000|LessThan0~4DUPLICATE ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~0DUPLICATE            ; |boussole|pwm:DU0_PWM|LessThan0~0DUPLICATE            ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~1DUPLICATE            ; |boussole|pwm:DU0_PWM|LessThan0~1DUPLICATE            ; combout          ;
+; |boussole|DATA_Compas[0]~reg0feeder                   ; |boussole|DATA_Compas[0]~reg0feeder                   ; combout          ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |boussole|cpt[5]                             ; |boussole|cpt[5]                             ; regout           ;
+; |boussole|cpt[2]                             ; |boussole|cpt[2]                             ; regout           ;
+; |boussole|cpt[4]                             ; |boussole|cpt[4]                             ; regout           ;
+; |boussole|cpt[3]                             ; |boussole|cpt[3]                             ; regout           ;
+; |boussole|cpt[9]                             ; |boussole|cpt[9]                             ; regout           ;
+; |boussole|cpt[8]                             ; |boussole|cpt[8]                             ; regout           ;
+; |boussole|cpt[6]                             ; |boussole|cpt[6]                             ; regout           ;
+; |boussole|cpt[7]                             ; |boussole|cpt[7]                             ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[7]            ; |boussole|pwm:DU0_PWM|cpt_duty[7]            ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[20]     ; |boussole|diviseur1ms:U0_div1000|cpt[20]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[21]     ; |boussole|diviseur1ms:U0_div1000|cpt[21]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[22]     ; |boussole|diviseur1ms:U0_div1000|cpt[22]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[23]     ; |boussole|diviseur1ms:U0_div1000|cpt[23]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[25]     ; |boussole|diviseur1ms:U0_div1000|cpt[25]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[24]     ; |boussole|diviseur1ms:U0_div1000|cpt[24]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[15]     ; |boussole|diviseur1ms:U0_div1000|cpt[15]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[16]     ; |boussole|diviseur1ms:U0_div1000|cpt[16]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[17]     ; |boussole|diviseur1ms:U0_div1000|cpt[17]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[19]     ; |boussole|diviseur1ms:U0_div1000|cpt[19]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[18]     ; |boussole|diviseur1ms:U0_div1000|cpt[18]     ; regout           ;
+; |boussole|Add0~5                             ; |boussole|Add0~6                             ; cout             ;
+; |boussole|Add0~9                             ; |boussole|Add0~9                             ; sumout           ;
+; |boussole|Add0~9                             ; |boussole|Add0~10                            ; cout             ;
+; |boussole|Add0~13                            ; |boussole|Add0~13                            ; sumout           ;
+; |boussole|Add0~13                            ; |boussole|Add0~14                            ; cout             ;
+; |boussole|Add0~17                            ; |boussole|Add0~17                            ; sumout           ;
+; |boussole|Add0~17                            ; |boussole|Add0~18                            ; cout             ;
+; |boussole|Add0~21                            ; |boussole|Add0~21                            ; sumout           ;
+; |boussole|Add0~21                            ; |boussole|Add0~22                            ; cout             ;
+; |boussole|Add0~25                            ; |boussole|Add0~25                            ; sumout           ;
+; |boussole|Add0~25                            ; |boussole|Add0~26                            ; cout             ;
+; |boussole|Add0~29                            ; |boussole|Add0~29                            ; sumout           ;
+; |boussole|Add0~29                            ; |boussole|Add0~30                            ; cout             ;
+; |boussole|Add0~33                            ; |boussole|Add0~33                            ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~29                ; |boussole|pwm:DU0_PWM|Add1~29                ; sumout           ;
+; |boussole|pwm:DU0_PWM|cpt[10]                ; |boussole|pwm:DU0_PWM|cpt[10]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[11]                ; |boussole|pwm:DU0_PWM|cpt[11]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[12]                ; |boussole|pwm:DU0_PWM|cpt[12]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[13]                ; |boussole|pwm:DU0_PWM|cpt[13]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[15]                ; |boussole|pwm:DU0_PWM|cpt[15]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[14]                ; |boussole|pwm:DU0_PWM|cpt[14]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[9]                 ; |boussole|pwm:DU0_PWM|cpt[9]                 ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[8]                 ; |boussole|pwm:DU0_PWM|cpt[8]                 ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~61     ; |boussole|diviseur1ms:U0_div1000|Add0~61     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~61     ; |boussole|diviseur1ms:U0_div1000|Add0~62     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~65     ; |boussole|diviseur1ms:U0_div1000|Add0~65     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~65     ; |boussole|diviseur1ms:U0_div1000|Add0~66     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~69     ; |boussole|diviseur1ms:U0_div1000|Add0~69     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~69     ; |boussole|diviseur1ms:U0_div1000|Add0~70     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~73     ; |boussole|diviseur1ms:U0_div1000|Add0~73     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~73     ; |boussole|diviseur1ms:U0_div1000|Add0~74     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~77     ; |boussole|diviseur1ms:U0_div1000|Add0~77     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~77     ; |boussole|diviseur1ms:U0_div1000|Add0~78     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~81     ; |boussole|diviseur1ms:U0_div1000|Add0~81     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~81     ; |boussole|diviseur1ms:U0_div1000|Add0~82     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~85     ; |boussole|diviseur1ms:U0_div1000|Add0~85     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~85     ; |boussole|diviseur1ms:U0_div1000|Add0~86     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~89     ; |boussole|diviseur1ms:U0_div1000|Add0~89     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~89     ; |boussole|diviseur1ms:U0_div1000|Add0~90     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~93     ; |boussole|diviseur1ms:U0_div1000|Add0~93     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~93     ; |boussole|diviseur1ms:U0_div1000|Add0~94     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~97     ; |boussole|diviseur1ms:U0_div1000|Add0~97     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~97     ; |boussole|diviseur1ms:U0_div1000|Add0~98     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~101    ; |boussole|diviseur1ms:U0_div1000|Add0~101    ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~29                ; |boussole|pwm:DU0_PWM|Add0~30                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~33                ; |boussole|pwm:DU0_PWM|Add0~33                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~33                ; |boussole|pwm:DU0_PWM|Add0~34                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~37                ; |boussole|pwm:DU0_PWM|Add0~37                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~37                ; |boussole|pwm:DU0_PWM|Add0~38                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~41                ; |boussole|pwm:DU0_PWM|Add0~41                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~41                ; |boussole|pwm:DU0_PWM|Add0~42                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~45                ; |boussole|pwm:DU0_PWM|Add0~45                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~45                ; |boussole|pwm:DU0_PWM|Add0~46                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~49                ; |boussole|pwm:DU0_PWM|Add0~49                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~49                ; |boussole|pwm:DU0_PWM|Add0~50                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~53                ; |boussole|pwm:DU0_PWM|Add0~53                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~53                ; |boussole|pwm:DU0_PWM|Add0~54                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~57                ; |boussole|pwm:DU0_PWM|Add0~57                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~57                ; |boussole|pwm:DU0_PWM|Add0~58                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~61                ; |boussole|pwm:DU0_PWM|Add0~61                ; sumout           ;
+; |boussole|DATA_Compas[0]~reg0                ; |boussole|DATA_Compas[0]~reg0                ; regout           ;
+; |boussole|DATA_Compas[1]~reg0                ; |boussole|DATA_Compas[1]~reg0                ; regout           ;
+; |boussole|DATA_Compas[2]~reg0                ; |boussole|DATA_Compas[2]~reg0                ; regout           ;
+; |boussole|DATA_Compas[3]~reg0                ; |boussole|DATA_Compas[3]~reg0                ; regout           ;
+; |boussole|DATA_Compas[4]~reg0                ; |boussole|DATA_Compas[4]~reg0                ; regout           ;
+; |boussole|DATA_Compas[5]~reg0                ; |boussole|DATA_Compas[5]~reg0                ; regout           ;
+; |boussole|DATA_Compas[6]~reg0                ; |boussole|DATA_Compas[6]~reg0                ; regout           ;
+; |boussole|DATA_Compas[7]~reg0                ; |boussole|DATA_Compas[7]~reg0                ; regout           ;
+; |boussole|DATA_Compas[8]~reg0                ; |boussole|DATA_Compas[8]~reg0                ; regout           ;
+; |boussole|LessThan0~0                        ; |boussole|LessThan0~0                        ; combout          ;
+; |boussole|LessThan0~1                        ; |boussole|LessThan0~1                        ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~2 ; |boussole|diviseur1ms:U0_div1000|LessThan0~2 ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~3 ; |boussole|diviseur1ms:U0_div1000|LessThan0~3 ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~2            ; |boussole|pwm:DU0_PWM|LessThan0~2            ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~3            ; |boussole|pwm:DU0_PWM|LessThan0~3            ; combout          ;
+; |boussole|OUT_1s                             ; |boussole|OUT_1s                             ; padio            ;
+; |boussole|DATA_Compas[0]                     ; |boussole|DATA_Compas[0]                     ; padio            ;
+; |boussole|DATA_Compas[1]                     ; |boussole|DATA_Compas[1]                     ; padio            ;
+; |boussole|DATA_Compas[2]                     ; |boussole|DATA_Compas[2]                     ; padio            ;
+; |boussole|DATA_Compas[3]                     ; |boussole|DATA_Compas[3]                     ; padio            ;
+; |boussole|DATA_Compas[4]                     ; |boussole|DATA_Compas[4]                     ; padio            ;
+; |boussole|DATA_Compas[5]                     ; |boussole|DATA_Compas[5]                     ; padio            ;
+; |boussole|DATA_Compas[6]                     ; |boussole|DATA_Compas[6]                     ; padio            ;
+; |boussole|DATA_Compas[7]                     ; |boussole|DATA_Compas[7]                     ; padio            ;
+; |boussole|DATA_Compas[8]                     ; |boussole|DATA_Compas[8]                     ; padio            ;
+; |boussole|RAZ_N                              ; |boussole|RAZ_N~corein                       ; combout          ;
+; |boussole|RAZ_N~clkctrl                      ; |boussole|RAZ_N~clkctrl                      ; outclk           ;
+; |boussole|DATA_Compas[5]~reg0feeder          ; |boussole|DATA_Compas[5]~reg0feeder          ; combout          ;
+; |boussole|DATA_Compas[8]~reg0feeder          ; |boussole|DATA_Compas[8]~reg0feeder          ; combout          ;
+; |boussole|DATA_Compas[7]~reg0feeder          ; |boussole|DATA_Compas[7]~reg0feeder          ; combout          ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |boussole|cpt[5]                             ; |boussole|cpt[5]                             ; regout           ;
+; |boussole|cpt[2]                             ; |boussole|cpt[2]                             ; regout           ;
+; |boussole|cpt[1]                             ; |boussole|cpt[1]                             ; regout           ;
+; |boussole|cpt[4]                             ; |boussole|cpt[4]                             ; regout           ;
+; |boussole|cpt[3]                             ; |boussole|cpt[3]                             ; regout           ;
+; |boussole|cpt[9]                             ; |boussole|cpt[9]                             ; regout           ;
+; |boussole|cpt[8]                             ; |boussole|cpt[8]                             ; regout           ;
+; |boussole|cpt[6]                             ; |boussole|cpt[6]                             ; regout           ;
+; |boussole|cpt[7]                             ; |boussole|cpt[7]                             ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt_duty[7]            ; |boussole|pwm:DU0_PWM|cpt_duty[7]            ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[20]     ; |boussole|diviseur1ms:U0_div1000|cpt[20]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[21]     ; |boussole|diviseur1ms:U0_div1000|cpt[21]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[22]     ; |boussole|diviseur1ms:U0_div1000|cpt[22]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[23]     ; |boussole|diviseur1ms:U0_div1000|cpt[23]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[25]     ; |boussole|diviseur1ms:U0_div1000|cpt[25]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[24]     ; |boussole|diviseur1ms:U0_div1000|cpt[24]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[15]     ; |boussole|diviseur1ms:U0_div1000|cpt[15]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[16]     ; |boussole|diviseur1ms:U0_div1000|cpt[16]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[17]     ; |boussole|diviseur1ms:U0_div1000|cpt[17]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[19]     ; |boussole|diviseur1ms:U0_div1000|cpt[19]     ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|cpt[18]     ; |boussole|diviseur1ms:U0_div1000|cpt[18]     ; regout           ;
+; |boussole|Add0~5                             ; |boussole|Add0~5                             ; sumout           ;
+; |boussole|Add0~5                             ; |boussole|Add0~6                             ; cout             ;
+; |boussole|Add0~9                             ; |boussole|Add0~9                             ; sumout           ;
+; |boussole|Add0~9                             ; |boussole|Add0~10                            ; cout             ;
+; |boussole|Add0~13                            ; |boussole|Add0~13                            ; sumout           ;
+; |boussole|Add0~13                            ; |boussole|Add0~14                            ; cout             ;
+; |boussole|Add0~17                            ; |boussole|Add0~17                            ; sumout           ;
+; |boussole|Add0~17                            ; |boussole|Add0~18                            ; cout             ;
+; |boussole|Add0~21                            ; |boussole|Add0~21                            ; sumout           ;
+; |boussole|Add0~21                            ; |boussole|Add0~22                            ; cout             ;
+; |boussole|Add0~25                            ; |boussole|Add0~25                            ; sumout           ;
+; |boussole|Add0~25                            ; |boussole|Add0~26                            ; cout             ;
+; |boussole|Add0~29                            ; |boussole|Add0~29                            ; sumout           ;
+; |boussole|Add0~29                            ; |boussole|Add0~30                            ; cout             ;
+; |boussole|Add0~33                            ; |boussole|Add0~33                            ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add1~29                ; |boussole|pwm:DU0_PWM|Add1~29                ; sumout           ;
+; |boussole|pwm:DU0_PWM|cpt[10]                ; |boussole|pwm:DU0_PWM|cpt[10]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[11]                ; |boussole|pwm:DU0_PWM|cpt[11]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[12]                ; |boussole|pwm:DU0_PWM|cpt[12]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[13]                ; |boussole|pwm:DU0_PWM|cpt[13]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[15]                ; |boussole|pwm:DU0_PWM|cpt[15]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[14]                ; |boussole|pwm:DU0_PWM|cpt[14]                ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[9]                 ; |boussole|pwm:DU0_PWM|cpt[9]                 ; regout           ;
+; |boussole|pwm:DU0_PWM|cpt[8]                 ; |boussole|pwm:DU0_PWM|cpt[8]                 ; regout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~61     ; |boussole|diviseur1ms:U0_div1000|Add0~61     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~61     ; |boussole|diviseur1ms:U0_div1000|Add0~62     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~65     ; |boussole|diviseur1ms:U0_div1000|Add0~65     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~65     ; |boussole|diviseur1ms:U0_div1000|Add0~66     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~69     ; |boussole|diviseur1ms:U0_div1000|Add0~69     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~69     ; |boussole|diviseur1ms:U0_div1000|Add0~70     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~73     ; |boussole|diviseur1ms:U0_div1000|Add0~73     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~73     ; |boussole|diviseur1ms:U0_div1000|Add0~74     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~77     ; |boussole|diviseur1ms:U0_div1000|Add0~77     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~77     ; |boussole|diviseur1ms:U0_div1000|Add0~78     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~81     ; |boussole|diviseur1ms:U0_div1000|Add0~81     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~81     ; |boussole|diviseur1ms:U0_div1000|Add0~82     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~85     ; |boussole|diviseur1ms:U0_div1000|Add0~85     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~85     ; |boussole|diviseur1ms:U0_div1000|Add0~86     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~89     ; |boussole|diviseur1ms:U0_div1000|Add0~89     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~89     ; |boussole|diviseur1ms:U0_div1000|Add0~90     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~93     ; |boussole|diviseur1ms:U0_div1000|Add0~93     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~93     ; |boussole|diviseur1ms:U0_div1000|Add0~94     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~97     ; |boussole|diviseur1ms:U0_div1000|Add0~97     ; sumout           ;
+; |boussole|diviseur1ms:U0_div1000|Add0~97     ; |boussole|diviseur1ms:U0_div1000|Add0~98     ; cout             ;
+; |boussole|diviseur1ms:U0_div1000|Add0~101    ; |boussole|diviseur1ms:U0_div1000|Add0~101    ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~29                ; |boussole|pwm:DU0_PWM|Add0~30                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~33                ; |boussole|pwm:DU0_PWM|Add0~33                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~33                ; |boussole|pwm:DU0_PWM|Add0~34                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~37                ; |boussole|pwm:DU0_PWM|Add0~37                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~37                ; |boussole|pwm:DU0_PWM|Add0~38                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~41                ; |boussole|pwm:DU0_PWM|Add0~41                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~41                ; |boussole|pwm:DU0_PWM|Add0~42                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~45                ; |boussole|pwm:DU0_PWM|Add0~45                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~45                ; |boussole|pwm:DU0_PWM|Add0~46                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~49                ; |boussole|pwm:DU0_PWM|Add0~49                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~49                ; |boussole|pwm:DU0_PWM|Add0~50                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~53                ; |boussole|pwm:DU0_PWM|Add0~53                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~53                ; |boussole|pwm:DU0_PWM|Add0~54                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~57                ; |boussole|pwm:DU0_PWM|Add0~57                ; sumout           ;
+; |boussole|pwm:DU0_PWM|Add0~57                ; |boussole|pwm:DU0_PWM|Add0~58                ; cout             ;
+; |boussole|pwm:DU0_PWM|Add0~61                ; |boussole|pwm:DU0_PWM|Add0~61                ; sumout           ;
+; |boussole|DATA_Compas[0]~reg0                ; |boussole|DATA_Compas[0]~reg0                ; regout           ;
+; |boussole|DATA_Compas[1]~reg0                ; |boussole|DATA_Compas[1]~reg0                ; regout           ;
+; |boussole|DATA_Compas[2]~reg0                ; |boussole|DATA_Compas[2]~reg0                ; regout           ;
+; |boussole|DATA_Compas[3]~reg0                ; |boussole|DATA_Compas[3]~reg0                ; regout           ;
+; |boussole|DATA_Compas[4]~reg0                ; |boussole|DATA_Compas[4]~reg0                ; regout           ;
+; |boussole|DATA_Compas[5]~reg0                ; |boussole|DATA_Compas[5]~reg0                ; regout           ;
+; |boussole|DATA_Compas[6]~reg0                ; |boussole|DATA_Compas[6]~reg0                ; regout           ;
+; |boussole|DATA_Compas[7]~reg0                ; |boussole|DATA_Compas[7]~reg0                ; regout           ;
+; |boussole|DATA_Compas[8]~reg0                ; |boussole|DATA_Compas[8]~reg0                ; regout           ;
+; |boussole|LessThan0~0                        ; |boussole|LessThan0~0                        ; combout          ;
+; |boussole|LessThan0~1                        ; |boussole|LessThan0~1                        ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~2 ; |boussole|diviseur1ms:U0_div1000|LessThan0~2 ; combout          ;
+; |boussole|diviseur1ms:U0_div1000|LessThan0~3 ; |boussole|diviseur1ms:U0_div1000|LessThan0~3 ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~2            ; |boussole|pwm:DU0_PWM|LessThan0~2            ; combout          ;
+; |boussole|pwm:DU0_PWM|LessThan0~3            ; |boussole|pwm:DU0_PWM|LessThan0~3            ; combout          ;
+; |boussole|OUT_1s                             ; |boussole|OUT_1s                             ; padio            ;
+; |boussole|DATA_Compas[0]                     ; |boussole|DATA_Compas[0]                     ; padio            ;
+; |boussole|DATA_Compas[1]                     ; |boussole|DATA_Compas[1]                     ; padio            ;
+; |boussole|DATA_Compas[2]                     ; |boussole|DATA_Compas[2]                     ; padio            ;
+; |boussole|DATA_Compas[3]                     ; |boussole|DATA_Compas[3]                     ; padio            ;
+; |boussole|DATA_Compas[4]                     ; |boussole|DATA_Compas[4]                     ; padio            ;
+; |boussole|DATA_Compas[5]                     ; |boussole|DATA_Compas[5]                     ; padio            ;
+; |boussole|DATA_Compas[6]                     ; |boussole|DATA_Compas[6]                     ; padio            ;
+; |boussole|DATA_Compas[7]                     ; |boussole|DATA_Compas[7]                     ; padio            ;
+; |boussole|DATA_Compas[8]                     ; |boussole|DATA_Compas[8]                     ; padio            ;
+; |boussole|RAZ_N                              ; |boussole|RAZ_N~corein                       ; combout          ;
+; |boussole|RAZ_N~clkctrl                      ; |boussole|RAZ_N~clkctrl                      ; outclk           ;
+; |boussole|DATA_Compas[5]~reg0feeder          ; |boussole|DATA_Compas[5]~reg0feeder          ; combout          ;
+; |boussole|DATA_Compas[1]~reg0feeder          ; |boussole|DATA_Compas[1]~reg0feeder          ; combout          ;
+; |boussole|DATA_Compas[8]~reg0feeder          ; |boussole|DATA_Compas[8]~reg0feeder          ; combout          ;
+; |boussole|DATA_Compas[7]~reg0feeder          ; |boussole|DATA_Compas[7]~reg0feeder          ; combout          ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Sep 15 16:33:22 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Boussole -c Boussole
+Info: Using vector source file "C:/Users/Cyprien/Documents/GIT/TP_VHDL/Boussole/Boussole.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      51.91 %
+Info: Number of transitions in simulation is 4238700
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Tue Sep 15 16:33:59 2020
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:39
+
+
