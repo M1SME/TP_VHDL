@@ -103,6 +103,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 976 264 1144 280))
 )
 (symbol
 	(rect 384 112 760 288)
@@ -133,14 +134,14 @@ applicable agreement for further details.
 		(pt 376 112)
 		(output)
 		(text "out_port_from_the_OutputPIO[7..0] " (rect 0 0 200 14)(font "Arial" (font_size 8)))
-		(text "out_port_from_the_OutputPIO[7..0] " (rect 186 105 355 119)(font "Arial" (font_size 8)))
+		(text "out_port_from_the_OutputPIO[7..0] " (rect 186 105 386 119)(font "Arial" (font_size 8)))
 		(line (pt 360 112)(pt 376 112)(line_width 3))
 	)
 	(port
 		(pt 376 144)
 		(output)
 		(text "out_pwm_from_the_avalon_pwm_0 " (rect 0 0 208 14)(font "Arial" (font_size 8)))
-		(text "out_pwm_from_the_avalon_pwm_0 " (rect 179 137 355 151)(font "Arial" (font_size 8)))
+		(text "out_pwm_from_the_avalon_pwm_0 " (rect 179 137 387 151)(font "Arial" (font_size 8)))
 		(line (pt 360 144)(pt 376 144))
 	)
 	(drawing

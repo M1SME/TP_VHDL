@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Test
-Thu Sep 24 11:44:09 2020
+Sun Sep 27 17:16:14 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -136,7 +136,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; cpu_0.sdc     ; OK     ; Thu Sep 24 11:44:02 2020 ;
+; cpu_0.sdc     ; OK     ; Sun Sep 27 17:16:07 2020 ;
 +---------------+--------+--------------------------+
 
 
@@ -2453,7 +2453,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Sep 24 11:43:59 2020
+    Info: Processing started: Sun Sep 27 17:16:04 2020
 Info: Command: quartus_sta Test -c Test
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -2611,8 +2611,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 358 megabytes
-    Info: Processing ended: Thu Sep 24 11:44:09 2020
-    Info: Elapsed time: 00:00:10
+    Info: Processing ended: Sun Sep 27 17:16:13 2020
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:08
 
 
