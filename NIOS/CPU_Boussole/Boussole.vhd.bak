@@ -1,0 +1,186 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use ieee.numeric_std;
+use ieee.std_logic_unsigned.all;
+
+
+entity boussole is
+    port 
+    (
+         CLK_50M         :   in  std_logic;
+         RAZ_N  :           in std_logic ;
+         IN_PWM_COMPAS   :   in std_logic;
+      --  continu			:   in std_logic;
+      --  start_stop      :   in std_logic;
+        
+      --  DATA_VALID      :   out std_logic;
+         OUT_1s          :   out std_logic;
+     
+        
+		   chipselect, write_n : in std_logic;
+			writedata : in std_logic_vector (31 downto 0);
+			readdata : out std_logic_vector (31 downto 0);
+		 	address: std_logic_vector (1 downto 0)
+            --debug 
+         --   debug_pwm 	:	out std_logic;
+         --   ETat_HIGHT	:	out std_logic;
+          --  ETAT_LOW     	:	out std_logic   
+        
+
+         
+    );
+end entity boussole;
+
+
+
+architecture rtl of boussole is
+
+
+
+   signal  Acquisition : std_logic;
+   signal  Acquisition1s : std_logic;
+   signal CLK_1Hz : std_logic;
+   signal Clk1000Hz: std_logic;
+   signal  cptHigth     :  std_logic_vector(7 downto 0);
+ --signal PWM_HIGHT      :  std_logic;
+   signal dataok      :  std_logic;
+   signal ok1s      :  std_logic;
+   signal  DATA_Compas     :  std_logic_vector(7 downto 0);
+	signal data_valid : std_logic;
+	
+
+
+   signal PWM_Hight : std_logic;
+ 
+ -- debug 
+  constant  freq 		:	integer:=5; ---ajuster freq
+  constant  duty		:	integer:=20;
+ -- signal IN_PWM_COMPAS      :  std_logic;
+
+ 
+ --BUS AVALON
+  signal start_stop: std_logic ;
+  signal  continu			:   std_logic;
+  signal RegistreCtrl  :  std_logic_vector(2 downto 0);
+  signal DATA_valid_vector :  std_logic_vector(8 downto 0);
+
+begin
+
+Acquisition1s <= '1' when ((continu  = '1')) else '0';
+Acquisition <='1' when ((continu  = '0')and (start_stop = '0')) else '0';
+
+ok1s <= '1' when (CLK_1Hz = '1' and  Acquisition1s = '1') else '0'; 
+data_valid <=  '1' when (ok1s='1' or Acquisition = '1') else '0';
+
+
+
+Calcul : Process(RAZ_N, Clk1000Hz, IN_PWM_COMPAS )
+Begin 
+  if RAZ_N = '0' then
+			DATA_Compas <= (others => '0');
+
+	
+		elsif (Clk1000Hz = '1' and Clk1000Hz'event) then
+			
+			if( IN_PWM_COMPAS = '1' ) then 
+			cptHigth <= cptHigth +1;
+			end if;
+			if( IN_PWM_COMPAS = '0' ) then 
+			DATA_compas <= cptHigth ;
+			cptHigth <= (others => '0');
+			end if;
+
+	end if;
+end process Calcul;
+
+
+  
+  
+  -- écriture registres
+process_write: process (CLK_50M, RAZ_N)
+	begin
+		if RAZ_N = '0' then
+			RegistreCtrl <= (others => '0');
+		elsif CLK_50M'event and CLK_50M = '1' then
+		if chipselect ='1' and write_n = '0' then
+		if address = 16#00# then
+			RAZ_N <= writedata(0);
+			continu <= writedata(1);
+			start_stop <= writedata(2);
+		end if;
+	end if;
+end if;
+end process;
+
+
+process_write: process (clk, RAZ_N)
+		begin
+		if RAZ_N = '0' then
+			freq <= (others => '0');
+			duty <= (others => '0');
+			control <= (others => '0');
+		elsif clk'event and clk = '1' then
+			if chipselect ='1' and write_n = '0' then
+				if address = "00" then
+					RAZ_N <= writedata(0);
+					continu <= writedata(1);
+					start_stop <= writedata(2);
+				end if;
+			end if;
+		end if;
+
+end process;
+
+-- lecture registres
+process_Read: PROCESS(address, freq, duty, control)
+	BEGIN
+		case address is
+			when "00" => readdata <= freq ;
+			when "01" => readdata <= duty ;
+			when "10" => readdata <= X"0000000"&"00"&control ;
+			when others => readdata <= (others => '0');
+		end case;
+END PROCESS process_Read ;
+
+
+
+  -- lecture registres
+  
+
+	readdata <= X"00000" & "000" & DATA_VALID &  datA_Compas(7 downto 0) when to_integer(unsigned(address(1 downto 0))) = 16#01#  else
+	 (others => '0');
+
+
+
+-- Components
+
+  U0_div1 : entity work.diviseur
+  port map
+  (
+      Clk_O         =>  CLK_1Hz,
+      Clk_I         =>  CLK_50M
+  );
+  
+    U0_div1000 : entity work.diviseur1ms
+  port map
+  (
+      Clk_O         =>  Clk1000Hz,
+      Clk_I         =>  CLK_50M
+  );
+
+  -- debug 
+  
+ --     DU0_PWM : entity work.pwm
+  --port map
+  --(
+  --     Clk_I       => CLK_50M,
+--		Pwm		    => IN_PWM_COMPAS,
+--		ARst_N_I    =>RAZ_N,
+		--freq 		=>freq,
+ --       duty		=>duty
+--  );
+
+
+--debug_pwm <= IN_PWM_COMPAS;
+end architecture rtl;

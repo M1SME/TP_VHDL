@@ -1,8 +1,0 @@
-
-**** Build of configuration Nios II for project PWM_Test ****
-
-make all 
-Info: Building ../PWM_Test_bsp/
-make --no-print-directory -C ../PWM_Test_bsp/
-[BSP build complete]
-[PWM_Test build complete]

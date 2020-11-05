@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <systemtable filter="Default">
+  <columns>
+   <connections preferredWidth="47" />
+   <export visible="0" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="449" />
+   <clocksource preferredWidth="446" />
+   <frequency preferredWidth="432" />
+  </columns>
+ </clocktable>
+ <window width="1920" height="1030" x="0" y="0" />
+ <library
+   expandedCategories="Library/Peripherals/Display,Library/Bridges/Memory Mapped,Library/Memories and Memory Controllers,Library,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Library/Interface Protocols/High Speed,Library/Peripherals/Debug and Performance,Library/Interface Protocols,Library/Legacy Components,Project,Library/Bridges,Library/DSP/Video and Image Processing,Library/DSP,Library/Peripherals" />
+ <debug showDebugMenu="0" />
+</preferences>

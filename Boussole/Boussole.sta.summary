@@ -2,76 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLK_50M'
-Slack : -2.512
-TNS   : -66.069
+Type  : Slow Model Setup 'clk'
+Slack : -3.014
+TNS   : -80.763
 
-Type  : Slow 1200mV 85C Model Setup 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : 0.397
+Type  : Slow Model Setup 'diviseur1ms:U0_div1000|clk_Oo'
+Slack : -0.887
+TNS   : -4.830
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.485
+TNS   : -2.485
+
+Type  : Slow Model Hold 'diviseur1ms:U0_div1000|clk_Oo'
+Slack : 0.528
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CLK_50M'
-Slack : -0.068
-TNS   : -0.068
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.222
+TNS   : -38.222
 
-Type  : Slow 1200mV 85C Model Hold 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : 0.207
+Type  : Slow Model Minimum Pulse Width 'diviseur1ms:U0_div1000|clk_Oo'
+Slack : -0.500
+TNS   : -16.000
+
+Type  : Fast Model Setup 'clk'
+Slack : -0.842
+TNS   : -19.610
+
+Type  : Fast Model Setup 'diviseur1ms:U0_div1000|clk_Oo'
+Slack : 0.155
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_50M'
-Slack : -3.000
-TNS   : -32.000
+Type  : Fast Model Hold 'clk'
+Slack : -1.598
+TNS   : -1.598
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : -1.000
-TNS   : -9.000
-
-Type  : Slow 1200mV 0C Model Setup 'CLK_50M'
-Slack : -2.186
-TNS   : -57.375
-
-Type  : Slow 1200mV 0C Model Setup 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : 0.415
+Type  : Fast Model Hold 'diviseur1ms:U0_div1000|clk_Oo'
+Slack : 0.245
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CLK_50M'
-Slack : -0.079
-TNS   : -0.079
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.222
+TNS   : -38.222
 
-Type  : Slow 1200mV 0C Model Hold 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : 0.222
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_50M'
-Slack : -3.000
-TNS   : -32.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : -1.000
-TNS   : -9.000
-
-Type  : Fast 1200mV 0C Model Setup 'CLK_50M'
-Slack : -0.998
-TNS   : -25.862
-
-Type  : Fast 1200mV 0C Model Setup 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : 0.682
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLK_50M'
-Slack : -0.123
-TNS   : -0.123
-
-Type  : Fast 1200mV 0C Model Hold 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : 0.064
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_50M'
-Slack : -3.000
-TNS   : -33.726
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'diviseur1ms:U0_div1000|clk_Oo'
-Slack : -1.000
-TNS   : -9.000
+Type  : Fast Model Minimum Pulse Width 'diviseur1ms:U0_div1000|clk_Oo'
+Slack : -0.500
+TNS   : -16.000
 
 ------------------------------------------------------------

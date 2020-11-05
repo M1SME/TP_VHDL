@@ -1,0 +1,84 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use ieee.numeric_std;
+use ieee.std_logic_unsigned.all;
+
+
+entity boussole is
+    port 
+    (
+        CLK_50M         :   in  std_logic;
+        RAZ_N           :   in  std_logic;
+        IN_PWM_COMPAS   :   in std_logic;
+        continu			:   in std_logic;
+        start_stop      :   in std_logic;
+        
+        DATA_VALID      :   out std_logic;
+        OUT_1s          :   out std_logic;
+        DATA_Compas     :   out std_logic_vector(8 downto 0);
+        
+        --debug 
+        debug_pwm 	:	out std_logic;
+        ETat_HIGHT	:	out std_logic;
+        ETAT_LOW     	:	out std_logic   
+        
+
+         
+    );
+end entity boussole;
+
+
+
+architecture rtl of boussole is
+
+
+
+ signal  Acquisition : std_logic;
+ signal  Acquisition1s : std_logic;
+ signal CLK_1Hz : std_logic;
+ signal Clk1000Hz: std_logic;
+ signal  cptHigth     :  std_logic_vector(8 downto 0);
+ --signal PWM_HIGHT      :  std_logic;
+ signal dataok      :  std_logic;
+  signal ok1s      :  std_logic;
+
+
+signal PWM_Hight : std_logic;
+ 
+ -- debug 
+  constant  freq 		:	integer:=5; ---ajuster freq
+  constant  duty		:	integer:=20;
+ -- signal IN_PWM_COMPAS      :  std_logic;
+
+
+begin
+
+Acquisition1s <= '1' when ((continu  = '1')) else '0';
+Acquisition <='1' when ((continu  = '0')and (start_stop = '0')) else '0';
+
+ok1s <= '1' when (CLK_1Hz = '1' and  Acquisition1s = '1') else '0'; 
+
+DATA_VALID <=  '1' when (ok1s='1' or Acquisition = '1') else '0';
+
+
+
+
+Calcul : Process(RAZ_N, Clk1000Hz, IN_PWM_COMPAS )
+Begin 
+  if RAZ_N = '0' then
+			DATA_Compas <= (others => '0');
+
+	
+		elsif (Clk1000Hz = '1' and Clk1000Hz'event) then
+			
+			if( IN_PWM_COMPAS = '1' ) then 
+			cptHigth <= cptHigth +1;
+			end if;
+			if( IN_PWM_COMPAS = '0' ) then 
+			DATA_compas <= cptHigth ;
+			cptHigth <= (others => '0');
+			end if;
+
+	end if;
+end process Calcul;
