@@ -3,21 +3,19 @@
 set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_0.sdc]
 set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.ocp]
 # onchip_memory2_0
-# InputPIO
-# OutputPIO
 # jtag_uart_0
 # avalon_pwm_0
 set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) avalon_pwm_hw.tcl]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) avalon_pwm.vhd]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) avalon_pwm_0.vhd]
-# null
 # boussole_0
 set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) boussole_hw.tcl]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) boussole.vhd]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) diviseur.vhd]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) diviseur1ms.vhd]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) boussole_0.vhd]
-set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "0090F5B51AFE0000017597ED3BD6"
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "0090F5B51AFE000001759D243F01"
 set_global_assignment -entity "mon_SOPC" -name IP_TOOL_NAME "sopc"
 set_global_assignment -entity "mon_SOPC" -name IP_TOOL_VERSION "11.1sp2"
 set_global_assignment -entity "mon_SOPC" -name IP_TOOL_ENV "sopc"

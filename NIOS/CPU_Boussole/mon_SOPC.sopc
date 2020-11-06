@@ -2,32 +2,6 @@
 <system name="mon_SOPC">
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element InputPIO
-   {
-      datum _sortIndex
-      {
-         value = "2";
-         type = "int";
-      }
-      datum megawizard_uipreferences
-      {
-         value = "{output_language=VHDL, output_directory=C:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_test}";
-         type = "String";
-      }
-   }
-   element OutputPIO
-   {
-      datum _sortIndex
-      {
-         value = "3";
-         type = "int";
-      }
-      datum megawizard_uipreferences
-      {
-         value = "{}";
-         type = "String";
-      }
-   }
    element jtag_uart_0.avalon_jtag_slave
    {
       datum baseAddress
@@ -40,16 +14,8 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "4";
          type = "int";
-      }
-   }
-   element avalon_pwm_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "69664";
-         type = "long";
       }
    }
    element boussole_0.avalon_slave_0
@@ -60,11 +26,19 @@
          type = "long";
       }
    }
+   element avalon_pwm_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "69664";
+         type = "long";
+      }
+   }
    element boussole_0
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "5";
          type = "int";
       }
    }
@@ -72,7 +46,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "3";
          type = "int";
       }
    }
@@ -101,7 +75,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "2";
          type = "int";
       }
       datum megawizard_uipreferences
@@ -126,27 +100,11 @@
          type = "String";
       }
    }
-   element OutputPIO.s1
-   {
-      datum baseAddress
-      {
-         value = "69648";
-         type = "long";
-      }
-   }
    element onchip_memory2_0.s1
    {
       datum baseAddress
       {
          value = "32768";
-         type = "long";
-      }
-   }
-   element InputPIO.s1
-   {
-      datum baseAddress
-      {
-         value = "69632";
          type = "long";
       }
    }
@@ -164,8 +122,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="Test.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="-15909046873" />
- <parameter name="timeStamp" value="1604571704745" />
+ <parameter name="systemHash" value="-20595525148" />
+ <parameter name="timeStamp" value="1604659051011" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="11.1" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
@@ -266,7 +224,7 @@
   <parameter name="dcache_numTCDM" value="_0" />
   <parameter name="dcache_lineSize" value="_32" />
   <parameter name="dcache_bursts" value="false" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xD000' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='InputPIO.s1' start='0x11000' end='0x11010' /><slave name='OutputPIO.s1' start='0x11010' end='0x11020' /><slave name='avalon_pwm_0.avalon_slave_0' start='0x11020' end='0x11030' /><slave name='boussole_0.avalon_slave_0' start='0x11030' end='0x11040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11040' end='0x11048' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xD000' /><slave name='cpu_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='avalon_pwm_0.avalon_slave_0' start='0x11020' end='0x11030' /><slave name='boussole_0.avalon_slave_0' start='0x11030' end='0x11040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11040' end='0x11048' /></address-map>]]></parameter>
   <parameter name="dataAddrWidth" value="17" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="cpuReset" value="false" />
@@ -300,34 +258,6 @@
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>
- <module kind="altera_avalon_pio" version="11.1" enabled="1" name="InputPIO">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="2" />
- </module>
- <module kind="altera_avalon_pio" version="11.1" enabled="1" name="OutputPIO">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="8" />
- </module>
  <module
    kind="altera_avalon_jtag_uart"
    version="11.1"
@@ -348,7 +278,9 @@
  <module kind="avalon_pwm" version="1.0" enabled="1" name="avalon_pwm_0">
   <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
  </module>
- <module kind="boussole" version="1.0" enabled="1" name="boussole_0" />
+ <module kind="boussole" version="1.0" enabled="1" name="boussole_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+ </module>
  <connection kind="clock" version="11.1" start="clk_0.clk" end="cpu_0.clk" />
  <connection
    kind="avalon"
@@ -386,24 +318,6 @@
    end="onchip_memory2_0.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x8000" />
- </connection>
- <connection kind="clock" version="11.1" start="clk_0.clk" end="InputPIO.clk" />
- <connection
-   kind="avalon"
-   version="11.1"
-   start="cpu_0.data_master"
-   end="InputPIO.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011000" />
- </connection>
- <connection kind="clock" version="11.1" start="clk_0.clk" end="OutputPIO.clk" />
- <connection
-   kind="avalon"
-   version="11.1"
-   start="cpu_0.data_master"
-   end="OutputPIO.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011010" />
  </connection>
  <connection kind="clock" version="11.1" start="clk_0.clk" end="jtag_uart_0.clk" />
  <connection

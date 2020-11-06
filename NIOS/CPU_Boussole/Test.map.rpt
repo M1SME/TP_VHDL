@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Test
-Thu Nov 05 11:23:41 2020
+Fri Nov 06 11:44:13 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -99,15 +99,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 05 11:23:41 2020         ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 06 11:44:13 2020         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Test                                          ;
 ; Top-level Entity Name              ; Test                                          ;
 ; Family                             ; Cyclone IV E                                  ;
-; Total logic elements               ; 1,770                                         ;
-;     Total combinational functions  ; 1,563                                         ;
-;     Dedicated logic registers      ; 897                                           ;
-; Total registers                    ; 897                                           ;
+; Total logic elements               ; 1,745                                         ;
+;     Total combinational functions  ; 1,546                                         ;
+;     Dedicated logic registers      ; 889                                           ;
+; Total registers                    ; 889                                           ;
 ; Total pins                         ; 11                                            ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 175,104                                       ;
@@ -225,8 +225,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; diviseur1ms.vhd                                                                 ; yes             ; User VHDL File                         ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/diviseur1ms.vhd                     ;
 ; boussole_0.vhd                                                                  ; yes             ; User VHDL File                         ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/boussole_0.vhd                      ;
 ; mon_sopc.vhd                                                                    ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/mon_sopc.vhd                        ;
-; inputpio.vhd                                                                    ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/inputpio.vhd                        ;
-; outputpio.vhd                                                                   ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/outputpio.vhd                       ;
 ; cpu_0.vhd                                                                       ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/cpu_0.vhd                           ;
 ; cpu_0_test_bench.vhd                                                            ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/cpu_0_test_bench.vhd                ;
 ; altsyncram.tdf                                                                  ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altsyncram.tdf                             ;
@@ -271,6 +269,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; onchip_memory2_0.hex                                                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/onchip_memory2_0.hex                ;
 ; sld_hub.vhd                                                                     ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_hub.vhd                                ;
 ; sld_rom_sr.vhd                                                                  ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_rom_sr.vhd                             ;
+; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/inputpio.vhd           ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/inputpio.vhd                        ;
+; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/outputpio.vhd          ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/outputpio.vhd                       ;
 ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/db/altsyncram_jp22.tdf ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/db/altsyncram_jp22.tdf              ;
 ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/cpu_0_rf_ram.mif       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_Boussole/cpu_0_rf_ram.mif                    ;
 +---------------------------------------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------+
@@ -281,28 +281,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 1,770        ;
+; Estimated Total logic elements              ; 1,745        ;
 ;                                             ;              ;
-; Total combinational functions               ; 1563         ;
+; Total combinational functions               ; 1546         ;
 ; Logic element usage by number of LUT inputs ;              ;
 ;     -- 4 input functions                    ; 758          ;
-;     -- 3 input functions                    ; 534          ;
-;     -- <=2 input functions                  ; 271          ;
+;     -- 3 input functions                    ; 520          ;
+;     -- <=2 input functions                  ; 268          ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 1276         ;
+;     -- normal mode                          ; 1259         ;
 ;     -- arithmetic mode                      ; 287          ;
 ;                                             ;              ;
-; Total registers                             ; 897          ;
-;     -- Dedicated logic registers            ; 897          ;
+; Total registers                             ; 889          ;
+;     -- Dedicated logic registers            ; 889          ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
 ; I/O pins                                    ; 11           ;
 ; Total memory bits                           ; 175104       ;
 ; Maximum fan-out node                        ; CLK_50~input ;
-; Maximum fan-out                             ; 863          ;
-; Total fan-out                               ; 10836        ;
-; Average fan-out                             ; 4.11         ;
+; Maximum fan-out                             ; 855          ;
+; Total fan-out                               ; 10756        ;
+; Average fan-out                             ; 4.12         ;
 +---------------------------------------------+--------------+
 
 
@@ -311,22 +311,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                ; Library Name ;
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Test                                                                                           ; 1563 (1)          ; 897 (0)      ; 175104      ; 0            ; 0       ; 0         ; 11   ; 0            ; |Test                                                                                                                                                                                                                                                              ;              ;
-;    |mon_SOPC:inst|                                                                              ; 1440 (1)          ; 821 (0)      ; 175104      ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst                                                                                                                                                                                                                                                ;              ;
-;       |InputPIO:the_InputPIO|                                                                   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|InputPIO:the_InputPIO                                                                                                                                                                                                                          ;              ;
-;       |InputPIO_s1_arbitrator:the_InputPIO_s1|                                                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|InputPIO_s1_arbitrator:the_InputPIO_s1                                                                                                                                                                                                         ;              ;
-;       |OutputPIO:the_OutputPIO|                                                                 ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|OutputPIO:the_OutputPIO                                                                                                                                                                                                                        ;              ;
-;       |OutputPIO_s1_arbitrator:the_OutputPIO_s1|                                                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|OutputPIO_s1_arbitrator:the_OutputPIO_s1                                                                                                                                                                                                       ;              ;
-;       |avalon_pwm_0:the_avalon_pwm_0|                                                           ; 113 (0)           ; 99 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|avalon_pwm_0:the_avalon_pwm_0                                                                                                                                                                                                                  ;              ;
-;          |avalon_pwm:avalon_pwm_0|                                                              ; 113 (113)         ; 99 (99)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0                                                                                                                                                                                          ;              ;
+; |Test                                                                                           ; 1546 (1)          ; 889 (0)      ; 175104      ; 0            ; 0       ; 0         ; 11   ; 0            ; |Test                                                                                                                                                                                                                                                              ;              ;
+;    |mon_SOPC:inst|                                                                              ; 1423 (1)          ; 813 (0)      ; 175104      ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst                                                                                                                                                                                                                                                ;              ;
+;       |avalon_pwm_0:the_avalon_pwm_0|                                                           ; 112 (0)           ; 99 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|avalon_pwm_0:the_avalon_pwm_0                                                                                                                                                                                                                  ;              ;
+;          |avalon_pwm:avalon_pwm_0|                                                              ; 112 (112)         ; 99 (99)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0                                                                                                                                                                                          ;              ;
 ;       |avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0                                                                                                                                                                         ;              ;
-;       |boussole_0:the_boussole_0|                                                               ; 84 (0)            ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0:the_boussole_0                                                                                                                                                                                                                      ;              ;
-;          |boussole:boussole_0|                                                                  ; 84 (15)           ; 80 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0                                                                                                                                                                                                  ;              ;
+;       |boussole_0:the_boussole_0|                                                               ; 80 (0)            ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0:the_boussole_0                                                                                                                                                                                                                      ;              ;
+;          |boussole:boussole_0|                                                                  ; 80 (11)           ; 80 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0                                                                                                                                                                                                  ;              ;
 ;             |diviseur1ms:U0_div1000|                                                            ; 35 (35)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0|diviseur1ms:U0_div1000                                                                                                                                                                           ;              ;
 ;             |diviseur:U0_div1|                                                                  ; 34 (34)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0|diviseur:U0_div1                                                                                                                                                                                 ;              ;
-;       |boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0                                                                                                                                                                             ;              ;
-;       |cpu_0:the_cpu_0|                                                                         ; 899 (677)         ; 487 (304)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
-;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 222 (20)          ; 182 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
+;       |boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0                                                                                                                                                                             ;              ;
+;       |cpu_0:the_cpu_0|                                                                         ; 905 (679)         ; 487 (304)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
+;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 226 (24)          ; 182 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
 ;             |cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|               ; 102 (0)           ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper                                                                                                                        ;              ;
 ;                |cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|              ; 6 (6)             ; 49 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk                                                      ;              ;
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer2|                        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2 ;              ;
@@ -349,11 +345,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |altsyncram:the_altsyncram|                                                         ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram                                                                                                                                                   ;              ;
 ;                |altsyncram_iff1:auto_generated|                                                 ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_iff1:auto_generated                                                                                                                    ;              ;
 ;          |cpu_0_test_bench:the_cpu_0_test_bench|                                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench                                                                                                                                                                                          ;              ;
-;       |cpu_0_data_master_arbitrator:the_cpu_0_data_master|                                      ; 120 (120)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master                                                                                                                                                                                             ;              ;
+;       |cpu_0_data_master_arbitrator:the_cpu_0_data_master|                                      ; 113 (113)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master                                                                                                                                                                                             ;              ;
 ;       |cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master                                                                                                                                                                               ;              ;
-;       |cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|                          ; 30 (30)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module                                                                                                                                                                                 ;              ;
-;       |jtag_uart_0:the_jtag_uart_0|                                                             ; 147 (43)          ; 112 (13)     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0                                                                                                                                                                                                                    ;              ;
-;          |alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic|                                      ; 53 (53)           ; 59 (59)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic                                                                                                                                                                    ;              ;
+;       |cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|                          ; 32 (32)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module                                                                                                                                                                                 ;              ;
+;       |jtag_uart_0:the_jtag_uart_0|                                                             ; 146 (42)          ; 113 (13)     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0                                                                                                                                                                                                                    ;              ;
+;          |alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic|                                      ; 53 (53)           ; 60 (60)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic                                                                                                                                                                    ;              ;
 ;          |jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|                                        ; 26 (0)            ; 20 (0)       ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r                                                                                                                                                                      ;              ;
 ;             |scfifo:rfifo|                                                                      ; 26 (0)            ; 20 (0)       ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo                                                                                                                                                         ;              ;
 ;                |scfifo_jr21:auto_generated|                                                     ; 26 (0)            ; 20 (0)       ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_r:the_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated                                                                                                                              ;              ;
@@ -374,12 +370,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                      |cntr_1ob:wr_ptr|                                                          ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|cntr_1ob:wr_ptr                                                                                         ;              ;
 ;                      |dpram_nl21:FIFOram|                                                       ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram                                                                                      ;              ;
 ;                         |altsyncram_r1m1:altsyncram1|                                           ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|jtag_uart_0_scfifo_w:the_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1                                                          ;              ;
-;       |jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave                                                                                                                                                                     ;              ;
+;       |jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave|              ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave                                                                                                                                                                     ;              ;
 ;       |mon_SOPC_reset_clk_0_domain_synch_module:mon_SOPC_reset_clk_0_domain_synch|              ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|mon_SOPC_reset_clk_0_domain_synch_module:mon_SOPC_reset_clk_0_domain_synch                                                                                                                                                                     ;              ;
 ;       |onchip_memory2_0:the_onchip_memory2_0|                                                   ; 1 (1)             ; 0 (0)        ; 163840      ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|onchip_memory2_0:the_onchip_memory2_0                                                                                                                                                                                                          ;              ;
 ;          |altsyncram:the_altsyncram|                                                            ; 0 (0)             ; 0 (0)        ; 163840      ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|onchip_memory2_0:the_onchip_memory2_0|altsyncram:the_altsyncram                                                                                                                                                                                ;              ;
 ;             |altsyncram_68c1:auto_generated|                                                    ; 0 (0)             ; 0 (0)        ; 163840      ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|onchip_memory2_0:the_onchip_memory2_0|altsyncram:the_altsyncram|altsyncram_68c1:auto_generated                                                                                                                                                 ;              ;
-;       |onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|                                  ; 26 (26)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1                                                                                                                                                                                         ;              ;
+;       |onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|                                  ; 25 (25)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1                                                                                                                                                                                         ;              ;
 ;    |sld_hub:auto_hub|                                                                           ; 122 (81)          ; 76 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|sld_hub:auto_hub                                                                                                                                                                                                                                             ;              ;
 ;       |sld_rom_sr:hub_info_reg|                                                                 ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|sld_hub:auto_hub|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                     ;              ;
 ;       |sld_shadow_jsm:shadow_jsm|                                                               ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Test|sld_hub:auto_hub|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                   ;              ;
@@ -469,7 +465,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk|dbrk_break_pulse                       ; Stuck at GND due to stuck port data_in                                                                                                                    ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk|dbrk_goto0                             ; Stuck at GND due to stuck port data_in                                                                                                                    ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk|xbrk_break                             ; Stuck at GND due to stuck port data_in                                                                                                                    ;
-; mon_SOPC:inst|InputPIO:the_InputPIO|readdata[0..6,8..31]                                                                                               ; Stuck at GND due to stuck port data_in                                                                                                                    ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|W_control_rd_data[1..15,17..31]                                                                                          ; Stuck at GND due to stuck port data_in                                                                                                                    ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|trc_jtag_addr[0..16]                       ; Lost fanout                                                                                                                                               ;
 ; mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|onchip_memory2_0_s1_slavearbiterlockenable                                        ; Stuck at GND due to stuck port data_in                                                                                                                    ;
@@ -484,7 +479,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|last_cycle_cpu_0_data_master_granted_slave_cpu_0_jtag_debug_module        ; Lost fanout                                                                                                                                               ;
 ; mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_saved_chosen_master_vector[1]                     ; Lost fanout                                                                                                                                               ;
 ; mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_reg_firsttransfer                                 ; Lost fanout                                                                                                                                               ;
-; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[0]           ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[1]  ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[1]           ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[2]  ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[2]           ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[3]  ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[3]           ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[4]  ;
@@ -514,6 +508,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[28]          ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[29] ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[29]          ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[30] ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[30]          ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[31] ;
+; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[31]          ; Merged with mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[0]  ;
 ; mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|onchip_memory2_0_s1_arb_addend[0]                                                 ; Merged with mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|onchip_memory2_0_s1_arb_addend[1]                                        ;
 ; mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|registered_cpu_0_data_master_readdata[11,24..30]                                      ; Merged with mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|registered_cpu_0_data_master_readdata[31]                                    ;
 ; mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|d1_cpu_0_jtag_debug_module_end_xfer                                       ; Merged with mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|d1_reasons_to_wait                                               ;
@@ -521,8 +516,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk|internal_dbrk_break                    ; Stuck at GND due to stuck port data_in                                                                                                                    ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break|trigbrktype                          ; Stuck at GND due to stuck port data_in                                                                                                                    ;
 ; mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|onchip_memory2_0_s1_saved_chosen_master_vector[0]                                 ; Lost fanout                                                                                                                                               ;
-; mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic|rst1                                                         ; Merged with mon_SOPC:inst|InputPIO:the_InputPIO|readdata[7]                                                                                               ;
-; Total Number of Removed Registers = 247                                                                                                                ;                                                                                                                                                           ;
+; Total Number of Removed Registers = 215                                                                                                                ;                                                                                                                                                           ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -547,12 +541,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 897   ;
+; Total registers                              ; 889   ;
 ; Number of registers using Synchronous Clear  ; 150   ;
 ; Number of registers using Synchronous Load   ; 145   ;
-; Number of registers using Asynchronous Clear ; 623   ;
+; Number of registers using Asynchronous Clear ; 615   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 487   ;
+; Number of registers using Clock Enable       ; 479   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -563,7 +557,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                                                                                                                             ; Fan out ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; mon_SOPC:inst|avalon_pwm_0:the_avalon_pwm_0|avalon_pwm:avalon_pwm_0|pwm_on                                                                    ; 2       ;
-; mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|internal_cpu_0_data_master_waitrequest                                       ; 11      ;
+; mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|internal_cpu_0_data_master_waitrequest                                       ; 10      ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|F_pc[13]                                                                                                        ; 10      ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|internal_i_read                                                                                                 ; 11      ;
 ; mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_arb_addend[0]                            ; 5       ;
@@ -573,8 +567,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|t_dav                                                                                               ; 3       ;
 ; mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|internal_oci_ienable1[16] ; 2       ;
 ; mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic|rst2                                                ; 3       ;
+; mon_SOPC:inst|jtag_uart_0:the_jtag_uart_0|alt_jtag_atlantic:jtag_uart_0_alt_jtag_atlantic|rst1                                                ; 1       ;
 ; sld_hub:auto_hub|tdo                                                                                                                          ; 2       ;
-; Total number of inverted registers = 12                                                                                                       ;         ;
+; Total number of inverted registers = 13                                                                                                       ;         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1547,7 +1542,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -1557,7 +1552,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Nov 05 11:23:21 2020
+    Info: Processing started: Fri Nov 06 11:43:46 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Test -c Test
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file test.bdf
@@ -1581,52 +1576,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file boussol
     Info (12022): Found design unit 1: boussole_0-rtl
     Info (12023): Found entity 1: boussole_0
 Info (12127): Elaborating entity "Test" for the top level hierarchy
-Warning (12125): Using design file mon_sopc.vhd, which is not specified as a design file for the current project, but contains definitions for 22 design units and 11 entities in project
-    Info (12022): Found design unit 1: InputPIO_s1_arbitrator-europa
-    Info (12022): Found design unit 2: OutputPIO_s1_arbitrator-europa
-    Info (12022): Found design unit 3: avalon_pwm_0_avalon_slave_0_arbitrator-europa
-    Info (12022): Found design unit 4: boussole_0_avalon_slave_0_arbitrator-europa
-    Info (12022): Found design unit 5: cpu_0_jtag_debug_module_arbitrator-europa
-    Info (12022): Found design unit 6: cpu_0_data_master_arbitrator-europa
-    Info (12022): Found design unit 7: cpu_0_instruction_master_arbitrator-europa
-    Info (12022): Found design unit 8: jtag_uart_0_avalon_jtag_slave_arbitrator-europa
-    Info (12022): Found design unit 9: onchip_memory2_0_s1_arbitrator-europa
-    Info (12022): Found design unit 10: mon_SOPC_reset_clk_0_domain_synch_module-europa
-    Info (12022): Found design unit 11: mon_SOPC-europa
-    Info (12023): Found entity 1: InputPIO_s1_arbitrator
-    Info (12023): Found entity 2: OutputPIO_s1_arbitrator
-    Info (12023): Found entity 3: avalon_pwm_0_avalon_slave_0_arbitrator
-    Info (12023): Found entity 4: boussole_0_avalon_slave_0_arbitrator
-    Info (12023): Found entity 5: cpu_0_jtag_debug_module_arbitrator
-    Info (12023): Found entity 6: cpu_0_data_master_arbitrator
-    Info (12023): Found entity 7: cpu_0_instruction_master_arbitrator
-    Info (12023): Found entity 8: jtag_uart_0_avalon_jtag_slave_arbitrator
-    Info (12023): Found entity 9: onchip_memory2_0_s1_arbitrator
-    Info (12023): Found entity 10: mon_SOPC_reset_clk_0_domain_synch_module
-    Info (12023): Found entity 11: mon_SOPC
+Warning (12125): Using design file mon_sopc.vhd, which is not specified as a design file for the current project, but contains definitions for 18 design units and 9 entities in project
+    Info (12022): Found design unit 1: avalon_pwm_0_avalon_slave_0_arbitrator-europa
+    Info (12022): Found design unit 2: boussole_0_avalon_slave_0_arbitrator-europa
+    Info (12022): Found design unit 3: cpu_0_jtag_debug_module_arbitrator-europa
+    Info (12022): Found design unit 4: cpu_0_data_master_arbitrator-europa
+    Info (12022): Found design unit 5: cpu_0_instruction_master_arbitrator-europa
+    Info (12022): Found design unit 6: jtag_uart_0_avalon_jtag_slave_arbitrator-europa
+    Info (12022): Found design unit 7: onchip_memory2_0_s1_arbitrator-europa
+    Info (12022): Found design unit 8: mon_SOPC_reset_clk_0_domain_synch_module-europa
+    Info (12022): Found design unit 9: mon_SOPC-europa
+    Info (12023): Found entity 1: avalon_pwm_0_avalon_slave_0_arbitrator
+    Info (12023): Found entity 2: boussole_0_avalon_slave_0_arbitrator
+    Info (12023): Found entity 3: cpu_0_jtag_debug_module_arbitrator
+    Info (12023): Found entity 4: cpu_0_data_master_arbitrator
+    Info (12023): Found entity 5: cpu_0_instruction_master_arbitrator
+    Info (12023): Found entity 6: jtag_uart_0_avalon_jtag_slave_arbitrator
+    Info (12023): Found entity 7: onchip_memory2_0_s1_arbitrator
+    Info (12023): Found entity 8: mon_SOPC_reset_clk_0_domain_synch_module
+    Info (12023): Found entity 9: mon_SOPC
 Info (12128): Elaborating entity "mon_SOPC" for hierarchy "mon_SOPC:inst"
-Info (12128): Elaborating entity "InputPIO_s1_arbitrator" for hierarchy "mon_SOPC:inst|InputPIO_s1_arbitrator:the_InputPIO_s1"
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(50): used implicit default value for signal "cpu_0_data_master_read_data_valid_InputPIO_s1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
-Warning (12125): Using design file inputpio.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: InputPIO-europa
-    Info (12023): Found entity 1: InputPIO
-Info (12128): Elaborating entity "InputPIO" for hierarchy "mon_SOPC:inst|InputPIO:the_InputPIO"
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
-Info (12128): Elaborating entity "OutputPIO_s1_arbitrator" for hierarchy "mon_SOPC:inst|OutputPIO_s1_arbitrator:the_OutputPIO_s1"
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(283): used implicit default value for signal "cpu_0_data_master_read_data_valid_OutputPIO_s1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
-Warning (12125): Using design file outputpio.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: OutputPIO-europa
-    Info (12023): Found entity 1: OutputPIO
-Info (12128): Elaborating entity "OutputPIO" for hierarchy "mon_SOPC:inst|OutputPIO:the_OutputPIO"
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
-Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
 Info (12128): Elaborating entity "avalon_pwm_0_avalon_slave_0_arbitrator" for hierarchy "mon_SOPC:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0"
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(521): used implicit default value for signal "cpu_0_data_master_read_data_valid_avalon_pwm_0_avalon_slave_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(55): used implicit default value for signal "cpu_0_data_master_read_data_valid_avalon_pwm_0_avalon_slave_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
 Info (12128): Elaborating entity "avalon_pwm_0" for hierarchy "mon_SOPC:inst|avalon_pwm_0:the_avalon_pwm_0"
@@ -1634,7 +1605,7 @@ Info (12128): Elaborating entity "avalon_pwm" for hierarchy "mon_SOPC:inst|avalo
 Warning (10492): VHDL Process Statement warning at avalon_pwm.vhd(26): signal "control" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at avalon_pwm.vhd(41): signal "control" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "boussole_0_avalon_slave_0_arbitrator" for hierarchy "mon_SOPC:inst|boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0"
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(759): used implicit default value for signal "cpu_0_data_master_read_data_valid_boussole_0_avalon_slave_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(293): used implicit default value for signal "cpu_0_data_master_read_data_valid_boussole_0_avalon_slave_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
 Info (12128): Elaborating entity "boussole_0" for hierarchy "mon_SOPC:inst|boussole_0:the_boussole_0"
@@ -1648,8 +1619,8 @@ Warning (10492): VHDL Process Statement warning at boussole.vhd(159): signal "DA
 Info (12128): Elaborating entity "diviseur" for hierarchy "mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0|diviseur:U0_div1"
 Info (12128): Elaborating entity "diviseur1ms" for hierarchy "mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0|diviseur1ms:U0_div1000"
 Info (12128): Elaborating entity "cpu_0_jtag_debug_module_arbitrator" for hierarchy "mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module"
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(999): used implicit default value for signal "cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(1003): used implicit default value for signal "cpu_0_instruction_master_read_data_valid_cpu_0_jtag_debug_module" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(533): used implicit default value for signal "cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(537): used implicit default value for signal "cpu_0_instruction_master_read_data_valid_cpu_0_jtag_debug_module" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
 Info (12128): Elaborating entity "cpu_0_data_master_arbitrator" for hierarchy "mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master"
@@ -1876,7 +1847,7 @@ Info (12133): Instantiated megafunction "mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nio
 Info (12128): Elaborating entity "sld_virtual_jtag_impl" for hierarchy "mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst"
 Info (12131): Elaborated megafunction instantiation "mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst", which is child of megafunction instantiation "mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy"
 Info (12128): Elaborating entity "jtag_uart_0_avalon_jtag_slave_arbitrator" for hierarchy "mon_SOPC:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave"
-Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(1665): used implicit default value for signal "cpu_0_data_master_read_data_valid_jtag_uart_0_avalon_jtag_slave" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mon_sopc.vhd(1187): used implicit default value for signal "cpu_0_data_master_read_data_valid_jtag_uart_0_avalon_jtag_slave" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (12125): Using design file jtag_uart_0.vhd, which is not specified as a design file for the current project, but contains definitions for 14 design units and 7 entities in project
     Info (12022): Found design unit 1: jtag_uart_0_log_module-europa
     Info (12022): Found design unit 2: jtag_uart_0_sim_scfifo_w-europa
@@ -2005,7 +1976,6 @@ Info (13005): Duplicate registers merged to single register
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (13005): Duplicate registers merged to single register
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 64 registers lost all their fanouts during netlist optimizations. The first 64 are displayed below.
     Info (17050): Register "mon_SOPC:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_itrace:the_cpu_0_nios2_oci_itrace|itm[0]" lost all its fanouts during netlist optimizations.
@@ -2073,15 +2043,15 @@ Info (17049): 64 registers lost all their fanouts during netlist optimizations. 
     Info (17050): Register "mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_reg_firsttransfer" lost all its fanouts during netlist optimizations.
     Info (17050): Register "mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1|onchip_memory2_0_s1_saved_chosen_master_vector[0]" lost all its fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Info (21057): Implemented 1974 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1950 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 1814 logic cells
+    Info (21061): Implemented 1790 logic cells
     Info (21064): Implemented 144 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 102 warnings
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 90 warnings
     Info: Peak virtual memory: 379 megabytes
-    Info: Processing ended: Thu Nov 05 11:23:42 2020
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Processing ended: Fri Nov 06 11:44:13 2020
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:22
 
 

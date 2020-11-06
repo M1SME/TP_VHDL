@@ -5130,9 +5130,6 @@ USR
 PARAMETER_STRING
 USR
 }
-# hierarchies {
-mon_SOPC:inst|InputPIO:the_InputPIO
-}
 # macro_sequence
 
 # end
@@ -5177,9 +5174,6 @@ USR
 31 downto 0
 PARAMETER_STRING
 USR
-}
-# hierarchies {
-mon_SOPC:inst|OutputPIO:the_OutputPIO
 }
 # macro_sequence
 
@@ -8903,618 +8897,6 @@ mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0|diviseur1ms:U0_div10
 
 # end
 # entity
-mon_SOPC
-# storage
-db|Test.(1).cnf
-db|Test.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-mon_SOPC:inst
-}
-# macro_sequence
-
-# end
-# entity
-InputPIO_s1_arbitrator
-# storage
-db|Test.(2).cnf
-db|Test.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(inputpio_s1_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(inputpio_s1_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(inputpio_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|InputPIO_s1_arbitrator:the_InputPIO_s1
-}
-# macro_sequence
-
-# end
-# entity
-OutputPIO_s1_arbitrator
-# storage
-db|Test.(4).cnf
-db|Test.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(outputpio_s1_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(outputpio_s1_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(outputpio_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(outputpio_s1_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|OutputPIO_s1_arbitrator:the_OutputPIO_s1
-}
-# macro_sequence
-
-# end
-# entity
-avalon_pwm_0_avalon_slave_0_arbitrator
-# storage
-db|Test.(6).cnf
-db|Test.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(avalon_pwm_0_avalon_slave_0_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
-}
-# macro_sequence
-
-# end
-# entity
-boussole_0_avalon_slave_0_arbitrator
-# storage
-db|Test.(11).cnf
-db|Test.(11).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(boussole_0_avalon_slave_0_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(boussole_0_avalon_slave_0_address)
-1 downto 0
-PARAMETER_STRING
-USR
- constraint(boussole_0_avalon_slave_0_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(boussole_0_avalon_slave_0_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0
-}
-# macro_sequence
-
-# end
-# entity
-cpu_0_jtag_debug_module_arbitrator
-# storage
-db|Test.(71).cnf
-db|Test.(71).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_byteenable)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_instruction_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_address)
-8 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_byteenable)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module
-}
-# macro_sequence
-
-# end
-# entity
-cpu_0_data_master_arbitrator
-# storage
-db|Test.(74).cnf
-db|Test.(74).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(inputpio_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(outputpio_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(avalon_pwm_0_avalon_slave_0_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(boussole_0_avalon_slave_0_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(jtag_uart_0_avalon_jtag_slave_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_irq)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master
-}
-# macro_sequence
-
-# end
-# entity
-cpu_0_instruction_master_arbitrator
-# storage
-db|Test.(75).cnf
-db|Test.(75).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(cpu_0_instruction_master_address)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_jtag_debug_module_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_instruction_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_instruction_master_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master
-}
-# macro_sequence
-
-# end
-# entity
-jtag_uart_0_avalon_jtag_slave_arbitrator
-# storage
-db|Test.(76).cnf
-db|Test.(76).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(jtag_uart_0_avalon_jtag_slave_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(jtag_uart_0_avalon_jtag_slave_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(jtag_uart_0_avalon_jtag_slave_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave
-}
-# macro_sequence
-
-# end
-# entity
-onchip_memory2_0_s1_arbitrator
-# storage
-db|Test.(77).cnf
-db|Test.(77).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(cpu_0_data_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_byteenable)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_data_master_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(cpu_0_instruction_master_address_to_slave)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_readdata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_address)
-12 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_byteenable)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_readdata_from_sa)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(onchip_memory2_0_s1_writedata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1
-}
-# macro_sequence
-
-# end
-# entity
-mon_SOPC_reset_clk_0_domain_synch_module
-# storage
-db|Test.(78).cnf
-db|Test.(78).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mon_sopc.vhd
-839544d1f38e5ab083cc139093ad77b9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-mon_SOPC:inst|mon_SOPC_reset_clk_0_domain_synch_module:mon_SOPC_reset_clk_0_domain_synch
-}
-# macro_sequence
-
-# end
-# entity
-Test
-# storage
-db|Test.(0).cnf
-db|Test.(0).cnf
-# case_insensitive
-# source_file
-test.bdf
-58284acccb9bebfcfce2cd0c98a6d1a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 boussole_0
 # storage
 db|Test.(65).cnf
@@ -9612,6 +8994,506 @@ diviseur.vhd
 }
 # hierarchies {
 mon_SOPC:inst|boussole_0:the_boussole_0|boussole:boussole_0
+}
+# macro_sequence
+
+# end
+# entity
+Test
+# storage
+db|Test.(0).cnf
+db|Test.(0).cnf
+# case_insensitive
+# source_file
+test.bdf
+c2bf74e2acc78f9aa480e8ba146d3c17
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+mon_SOPC
+# storage
+db|Test.(1).cnf
+db|Test.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+mon_SOPC:inst
+}
+# macro_sequence
+
+# end
+# entity
+avalon_pwm_0_avalon_slave_0_arbitrator
+# storage
+db|Test.(2).cnf
+db|Test.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(avalon_pwm_0_avalon_slave_0_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(avalon_pwm_0_avalon_slave_0_address)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(avalon_pwm_0_avalon_slave_0_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(avalon_pwm_0_avalon_slave_0_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|avalon_pwm_0_avalon_slave_0_arbitrator:the_avalon_pwm_0_avalon_slave_0
+}
+# macro_sequence
+
+# end
+# entity
+boussole_0_avalon_slave_0_arbitrator
+# storage
+db|Test.(4).cnf
+db|Test.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(boussole_0_avalon_slave_0_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(boussole_0_avalon_slave_0_address)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(boussole_0_avalon_slave_0_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(boussole_0_avalon_slave_0_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|boussole_0_avalon_slave_0_arbitrator:the_boussole_0_avalon_slave_0
+}
+# macro_sequence
+
+# end
+# entity
+cpu_0_jtag_debug_module_arbitrator
+# storage
+db|Test.(6).cnf
+db|Test.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_byteenable)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_instruction_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_address)
+8 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_byteenable)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module
+}
+# macro_sequence
+
+# end
+# entity
+cpu_0_data_master_arbitrator
+# storage
+db|Test.(11).cnf
+db|Test.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(avalon_pwm_0_avalon_slave_0_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(boussole_0_avalon_slave_0_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_address)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(jtag_uart_0_avalon_jtag_slave_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_irq)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master
+}
+# macro_sequence
+
+# end
+# entity
+cpu_0_instruction_master_arbitrator
+# storage
+db|Test.(71).cnf
+db|Test.(71).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(cpu_0_instruction_master_address)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_jtag_debug_module_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_instruction_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_instruction_master_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master
+}
+# macro_sequence
+
+# end
+# entity
+jtag_uart_0_avalon_jtag_slave_arbitrator
+# storage
+db|Test.(74).cnf
+db|Test.(74).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(jtag_uart_0_avalon_jtag_slave_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(jtag_uart_0_avalon_jtag_slave_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(jtag_uart_0_avalon_jtag_slave_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|jtag_uart_0_avalon_jtag_slave_arbitrator:the_jtag_uart_0_avalon_jtag_slave
+}
+# macro_sequence
+
+# end
+# entity
+onchip_memory2_0_s1_arbitrator
+# storage
+db|Test.(75).cnf
+db|Test.(75).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(cpu_0_data_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_byteenable)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_data_master_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(cpu_0_instruction_master_address_to_slave)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_address)
+12 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_byteenable)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_readdata_from_sa)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(onchip_memory2_0_s1_writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mon_SOPC:inst|onchip_memory2_0_s1_arbitrator:the_onchip_memory2_0_s1
+}
+# macro_sequence
+
+# end
+# entity
+mon_SOPC_reset_clk_0_domain_synch_module
+# storage
+db|Test.(76).cnf
+db|Test.(76).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mon_sopc.vhd
+e23921e2aa67d16cd548239d586e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+mon_SOPC:inst|mon_SOPC_reset_clk_0_domain_synch_module:mon_SOPC_reset_clk_0_domain_synch
 }
 # macro_sequence
 

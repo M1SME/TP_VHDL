@@ -1,7 +1,7 @@
 PACKAGE install2 
 {
    # This file informs the Nios II IDE of non-legacy component paths.
-   # Generated 2020.11.05.11:21:48
+   # Generated 2020.11.06.11:39:59
    COMPONENT alt_interlaken_hp_mac 
    {
       VERSION 11.1 
