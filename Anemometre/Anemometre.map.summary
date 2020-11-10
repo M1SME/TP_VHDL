@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Nov 08 17:53:24 2020
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Revision Name : Anemometre
+Top-level Entity Name : anemometre
+Family : Cyclone IV E
+Total logic elements : 73
+    Total combinational functions : 61
+    Dedicated logic registers : 51
+Total registers : 51
+Total pins : 79
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

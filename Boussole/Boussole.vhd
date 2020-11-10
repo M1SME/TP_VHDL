@@ -41,7 +41,7 @@ architecture rtl of boussole is
    signal  Acquisition        : std_logic;
    signal  Acquisition1s      : std_logic;
    signal  CLK_1Hz            : std_logic;
-   signal  Clk1000Hz          : std_logic;
+   signal  Clk100000Hz          : std_logic;
    signal  cptHigth           : std_logic_vector(7 downto 0);
  --signal  PWM_HIGHT          : std_logic;
    signal  dataok             : std_logic;
@@ -82,7 +82,7 @@ data_valid <=  '1' when (ok1s='1' or Acquisition = '1') else '0';
 
 -- GESTION DE DATA_COMPAS  --- 
 
-Calcul : Process(reset_n , Clk1000Hz, IN_PWM_COMPAS )
+Calcul : Process(reset_n , Clk100000Hz, IN_PWM_COMPAS )
 Begin 
   if reset_n  = '0' then
 			DATA_Compas <= (others => '0');

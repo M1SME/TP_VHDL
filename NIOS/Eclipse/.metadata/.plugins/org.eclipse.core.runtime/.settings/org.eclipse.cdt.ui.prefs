@@ -1,5 +1,6 @@
-#Fri Nov 06 11:56:35 CET 2020
+#Sun Nov 08 18:33:20 CET 2020
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
+content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
 eclipse.preferences.version=1
 useQuickDiffPrefPage=true

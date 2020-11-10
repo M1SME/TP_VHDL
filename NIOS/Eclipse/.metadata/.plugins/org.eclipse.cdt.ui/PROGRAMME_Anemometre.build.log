@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project PROGRAMME_Anemometre ****
+
+make all 
+Info: Building ../PROGRAMME_Anemometre_bsp/
+make --no-print-directory -C ../PROGRAMME_Anemometre_bsp/
+[BSP build complete]
+[PROGRAMME_Anemometre build complete]

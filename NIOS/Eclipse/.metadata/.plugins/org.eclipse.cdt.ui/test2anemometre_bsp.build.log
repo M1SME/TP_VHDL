@@ -1,0 +1,5 @@
+
+**** Clean-only build of configuration Nios II for project test2anemometre_bsp ****
+
+make clean 
+[BSP clean complete]

@@ -1,0 +1,51 @@
+
+
+#define Config (unsigned int *) ANEMOMETRE_0_BASE
+#define Data_Anemo (unsigned int *) (ANEMOMETRE_0_BASE + 4)
+#define freq (unsigned int *) AVALON_PWM_0_BASE
+#define duty (unsigned int *) (AVALON_PWM_0_BASE + 4)
+#define ctrl (unsigned int *) (AVALON_PWM_0_BASE + 8)
+#include "system.h"
+#include "sys/alt_stdio.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+int main()
+{ 
+	int data_valid = 0;
+	unsigned int  donnees_anemo = 0;
+	int vitesse = 0;
+	  alt_putstr("Initialisation AVALLON PWM \n");
+
+	  *freq = 0x4c4b40; // divise clk par 5 000 000 donc Freq = 10Hz
+	  *duty = 0x2625a0; // RC = 50%
+	  *ctrl = 0x3;
+
+  alt_putstr("Initialisation Module ANEMOMETRE \n");
+
+  	  *Config = 0x2;    // Mode continu
+
+
+
+  while (1){
+
+	 data_valid = *Data_Anemo & 0x100;
+	  if(data_valid>>8 == 1 && (*Data_Anemo)& 0xff != 0){
+
+		  donnees_anemo = (*Data_Anemo)& 0xff;
+		  alt_putstr("Donnee brut anemometre = 0x ");
+		  printf("%x",donnees_anemo);
+		  alt_putstr("\n");
+
+		  vitesse = (250/ donnees_anemo );
+		  alt_putstr("Vitesse =  ");
+		  printf("%d",vitesse);
+		  alt_putstr(" kmH ");
+		alt_putstr("\n");
+
+	  }
+
+  }
+
+  return 0;
+}
