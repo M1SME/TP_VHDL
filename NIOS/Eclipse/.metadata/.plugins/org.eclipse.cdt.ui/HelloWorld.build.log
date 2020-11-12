@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project HelloWorld ****
+
+make all 
+Info: Building ../HelloWorld_bsp/
+make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]

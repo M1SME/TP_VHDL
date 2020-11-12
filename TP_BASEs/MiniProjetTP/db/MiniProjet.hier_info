@@ -1,0 +1,130 @@
+|Top
+ARst_N_I => compteur_bcd:U1_cpt.ARst_N_I
+ARst_N_I => decodeur:Seg.ARst_N_I
+ARst_N_I => Led~reg0.ACLR
+Clk_I => diviseur:U0_div.Clk_I
+Clk_I => Led~reg0.CLK
+Led <= Led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_bcd[0] <= compteur_bcd:U1_cpt.Cpt[0]
+led_bcd[1] <= compteur_bcd:U1_cpt.Cpt[1]
+led_bcd[2] <= compteur_bcd:U1_cpt.Cpt[2]
+led_bcd[3] <= compteur_bcd:U1_cpt.Cpt[3]
+segments[0] <= decodeur:Seg.segments[0]
+segments[1] <= decodeur:Seg.segments[1]
+segments[2] <= decodeur:Seg.segments[2]
+segments[3] <= decodeur:Seg.segments[3]
+segments[4] <= decodeur:Seg.segments[4]
+segments[5] <= decodeur:Seg.segments[5]
+segments[6] <= decodeur:Seg.segments[6]
+
+
+|Top|diviseur:U0_div
+Clk_I => clk_Oo.CLK
+Clk_I => cpt[0].CLK
+Clk_I => cpt[1].CLK
+Clk_I => cpt[2].CLK
+Clk_I => cpt[3].CLK
+Clk_I => cpt[4].CLK
+Clk_I => cpt[5].CLK
+Clk_I => cpt[6].CLK
+Clk_I => cpt[7].CLK
+Clk_I => cpt[8].CLK
+Clk_I => cpt[9].CLK
+Clk_I => cpt[10].CLK
+Clk_I => cpt[11].CLK
+Clk_I => cpt[12].CLK
+Clk_I => cpt[13].CLK
+Clk_I => cpt[14].CLK
+Clk_I => cpt[15].CLK
+Clk_I => cpt[16].CLK
+Clk_I => cpt[17].CLK
+Clk_I => cpt[18].CLK
+Clk_I => cpt[19].CLK
+Clk_I => cpt[20].CLK
+Clk_I => cpt[21].CLK
+Clk_I => cpt[22].CLK
+Clk_I => cpt[23].CLK
+Clk_I => cpt[24].CLK
+Clk_I => cpt[25].CLK
+Clk_O <= clk_Oo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|compteur_bcd:U1_cpt
+Clk_I => Cpt_interne[0].CLK
+Clk_I => Cpt_interne[1].CLK
+Clk_I => Cpt_interne[2].CLK
+Clk_I => Cpt_interne[3].CLK
+Cpt[0] <= Cpt_interne[0].DB_MAX_OUTPUT_PORT_TYPE
+Cpt[1] <= Cpt_interne[1].DB_MAX_OUTPUT_PORT_TYPE
+Cpt[2] <= Cpt_interne[2].DB_MAX_OUTPUT_PORT_TYPE
+Cpt[3] <= Cpt_interne[3].DB_MAX_OUTPUT_PORT_TYPE
+ARst_N_I => Cpt_interne[0].ACLR
+ARst_N_I => Cpt_interne[1].ACLR
+ARst_N_I => Cpt_interne[2].ACLR
+ARst_N_I => Cpt_interne[3].ACLR
+
+
+|Top|decodeur:Seg
+Clk_I => segments[0]~reg0.CLK
+Clk_I => segments[1]~reg0.CLK
+Clk_I => segments[2]~reg0.CLK
+Clk_I => segments[3]~reg0.CLK
+Clk_I => segments[4]~reg0.CLK
+Clk_I => segments[5]~reg0.CLK
+Clk_I => segments[6]~reg0.CLK
+ARst_N_I => segments[0]~reg0.PRESET
+ARst_N_I => segments[1]~reg0.PRESET
+ARst_N_I => segments[2]~reg0.PRESET
+ARst_N_I => segments[3]~reg0.PRESET
+ARst_N_I => segments[4]~reg0.PRESET
+ARst_N_I => segments[5]~reg0.PRESET
+ARst_N_I => segments[6]~reg0.PRESET
+Cpt10[0] => Equal0.IN9
+Cpt10[0] => Equal1.IN9
+Cpt10[0] => Equal2.IN9
+Cpt10[0] => Equal3.IN9
+Cpt10[0] => Equal4.IN9
+Cpt10[0] => Equal5.IN9
+Cpt10[0] => Equal6.IN9
+Cpt10[0] => Equal7.IN9
+Cpt10[0] => Equal8.IN9
+Cpt10[0] => Equal9.IN9
+Cpt10[1] => Equal0.IN8
+Cpt10[1] => Equal1.IN8
+Cpt10[1] => Equal2.IN8
+Cpt10[1] => Equal3.IN8
+Cpt10[1] => Equal4.IN8
+Cpt10[1] => Equal5.IN8
+Cpt10[1] => Equal6.IN8
+Cpt10[1] => Equal7.IN8
+Cpt10[1] => Equal8.IN8
+Cpt10[1] => Equal9.IN8
+Cpt10[2] => Equal0.IN7
+Cpt10[2] => Equal1.IN7
+Cpt10[2] => Equal2.IN7
+Cpt10[2] => Equal3.IN7
+Cpt10[2] => Equal4.IN7
+Cpt10[2] => Equal5.IN7
+Cpt10[2] => Equal6.IN7
+Cpt10[2] => Equal7.IN7
+Cpt10[2] => Equal8.IN7
+Cpt10[2] => Equal9.IN7
+Cpt10[3] => Equal0.IN6
+Cpt10[3] => Equal1.IN6
+Cpt10[3] => Equal2.IN6
+Cpt10[3] => Equal3.IN6
+Cpt10[3] => Equal4.IN6
+Cpt10[3] => Equal5.IN6
+Cpt10[3] => Equal6.IN6
+Cpt10[3] => Equal7.IN6
+Cpt10[3] => Equal8.IN6
+Cpt10[3] => Equal9.IN6
+segments[0] <= segments[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= segments[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= segments[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= segments[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= segments[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= segments[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= segments[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

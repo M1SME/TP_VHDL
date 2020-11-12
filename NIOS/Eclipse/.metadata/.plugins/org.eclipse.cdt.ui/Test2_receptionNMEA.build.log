@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project Test2_receptionNMEA ****
+
+make all 
+Info: Building ../Test2_receptionNMEA_bsp/
+make --no-print-directory -C ../Test2_receptionNMEA_bsp/
+[BSP build complete]
+[Test2_receptionNMEA build complete]

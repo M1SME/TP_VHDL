@@ -1,0 +1,15 @@
+# clk_0
+# cpu_0
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_0.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.ocp]
+# onchip_memory2_0
+# jtag_uart_0
+# NMEA_Interface_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) NMEA_Interface_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) NMEA_Interface.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) NMEA_Interface_0.vhd]
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "0090F5B51AFE00000175BBCE1EC6"
+set_global_assignment -entity "CPU_NMEA" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "CPU_NMEA" -name IP_TOOL_VERSION "11.1sp2"
+set_global_assignment -entity "CPU_NMEA" -name IP_TOOL_ENV "sopc"

@@ -1,0 +1,20 @@
+
+**** Build of configuration Nios II for project Test_receptionNMEA ****
+
+make all 
+Info: Building ../Test_receptionNMEA_bsp/
+make --no-print-directory -C ../Test_receptionNMEA_bsp/
+Makefile not up to date.
+C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/CPU_NMEA.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../Test_receptionNMEA_bsp/-recurs-make-lib] Error 2
