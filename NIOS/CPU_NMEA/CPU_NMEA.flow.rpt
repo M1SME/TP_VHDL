@@ -1,5 +1,5 @@
 Flow report for CPU_NMEA
-Thu Nov 12 10:46:18 2020
+Mon Nov 16 10:37:04 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -38,18 +38,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Flow Summary                                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 12 10:46:12 2020         ;
+; Flow Status                        ; Successful - Mon Nov 16 10:36:59 2020         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CPU_NMEA                                      ;
 ; Top-level Entity Name              ; CPU_NMEA                                      ;
 ; Family                             ; Cyclone IV E                                  ;
 ; Device                             ; EP4CE22F17C6                                  ;
 ; Timing Models                      ; Final                                         ;
-; Total logic elements               ; 1,485 / 22,320 ( 7 % )                        ;
-;     Total combinational functions  ; 1,384 / 22,320 ( 6 % )                        ;
-;     Dedicated logic registers      ; 786 / 22,320 ( 4 % )                          ;
-; Total registers                    ; 786                                           ;
-; Total pins                         ; 11 / 154 ( 7 % )                              ;
+; Total logic elements               ; 1,663 / 22,320 ( 7 % )                        ;
+;     Total combinational functions  ; 1,500 / 22,320 ( 7 % )                        ;
+;     Dedicated logic registers      ; 935 / 22,320 ( 4 % )                          ;
+; Total registers                    ; 935                                           ;
+; Total pins                         ; 12 / 154 ( 8 % )                              ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 171,264 / 608,256 ( 28 % )                    ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                               ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/12/2020 10:45:26 ;
+; Start date & time ; 11/16/2020 10:36:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU_NMEA            ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 66659621805650.160517432512292 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 66659621805650.160551937514832 ; --            ; --          ; --         ;
 ; IP_TOOL_ENV                         ; sopc                           ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; sopc                           ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 11.1sp2                        ; --            ; --          ; --         ;
@@ -83,7 +83,7 @@ applicable agreement for further details.
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top        ;
-; SOPC_BUILDER_SIGNATURE_ID           ; 0090F5B51AFE00000175BBCE1EC6   ; --            ; --          ; --         ;
+; SOPC_BUILDER_SIGNATURE_ID           ; 0090F5B51AFE00000175D06665E7   ; --            ; --          ; --         ;
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
 
 
@@ -92,11 +92,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 379 MB              ; 00:00:19                           ;
-; Fitter                    ; 00:00:17     ; 1.0                     ; 458 MB              ; 00:00:17                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 348 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 357 MB              ; 00:00:09                           ;
-; Total                     ; 00:00:51     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 379 MB              ; 00:00:16                           ;
+; Fitter                    ; 00:00:17     ; 1.0                     ; 460 MB              ; 00:00:17                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 348 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 358 MB              ; 00:00:09                           ;
+; Total                     ; 00:00:48     ; --                      ; --                  ; 00:00:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

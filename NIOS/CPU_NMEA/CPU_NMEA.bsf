@@ -1,8 +1,8 @@
 (header "symbol" (version "1.1"))
 (symbol
-(rect 0 0 432 112)
+(rect 0 0 432 128)
 (text "CPU_NMEA" (rect 4 0 89 16)(font "Arial" (font_size 10)))
-(text "inst" (rect 4 96 28 112)(font "Arial"))
+(text "inst" (rect 4 112 28 128)(font "Arial"))
 (port
 (pt 0 32)
 (input)
@@ -31,7 +31,14 @@
 (text "LEDs_from_the_NMEA_Interface_0[7..0] " (rect 208 73 405 89)(font "Arial" (font_size 8)))
 (line (pt 416 80)(pt 432 80)(line_width 3))
 )
+(port
+(pt 432 96)
+(output)
+(text "Tx_Pin_from_the_NMEA_Interface_0 " (rect 0 0 179 16)(font "Arial" (font_size 8)))
+(text "Tx_Pin_from_the_NMEA_Interface_0 " (rect 226 89 405 105)(font "Arial" (font_size 8)))
+(line (pt 416 96)(pt 432 96)(line_width 1))
+)
 (drawing
 (line (pt 16 64)(pt 415 64)(color 0 0 0)(dotted)(line_width 1))
-(rectangle (rect 16 16 416 96)(line_width 1)))
+(rectangle (rect 16 16 416 112)(line_width 1)))
 )

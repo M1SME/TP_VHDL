@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NMEA_Interface
-Thu Nov 12 09:52:02 2020
+Mon Nov 16 10:26:26 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -13,10 +13,12 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +44,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 12 09:52:02 2020         ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 16 10:26:25 2020         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; NMEA_Interface                                ;
 ; Top-level Entity Name              ; NMEA_Interface                                ;
 ; Family                             ; Cyclone IV E                                  ;
-; Total logic elements               ; 135                                           ;
-;     Total combinational functions  ; 92                                            ;
-;     Dedicated logic registers      ; 84                                            ;
-; Total registers                    ; 84                                            ;
-; Total pins                         ; 80                                            ;
+; Total logic elements               ; 304                                           ;
+;     Total combinational functions  ; 197                                           ;
+;     Dedicated logic registers      ; 234                                           ;
+; Total registers                    ; 234                                           ;
+; Total pins                         ; 82                                            ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 0                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                             ;
@@ -169,27 +171,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 135       ;
+; Estimated Total logic elements              ; 304       ;
 ;                                             ;           ;
-; Total combinational functions               ; 92        ;
+; Total combinational functions               ; 197       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 38        ;
-;     -- 3 input functions                    ; 5         ;
-;     -- <=2 input functions                  ; 49        ;
+;     -- 4 input functions                    ; 54        ;
+;     -- 3 input functions                    ; 54        ;
+;     -- <=2 input functions                  ; 89        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 57        ;
-;     -- arithmetic mode                      ; 35        ;
+;     -- normal mode                          ; 123       ;
+;     -- arithmetic mode                      ; 74        ;
 ;                                             ;           ;
-; Total registers                             ; 84        ;
-;     -- Dedicated logic registers            ; 84        ;
+; Total registers                             ; 234       ;
+;     -- Dedicated logic registers            ; 234       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 80        ;
+; I/O pins                                    ; 82        ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 84        ;
-; Total fan-out                               ; 721       ;
-; Average fan-out                             ; 2.15      ;
+; Maximum fan-out                             ; 234       ;
+; Total fan-out                               ; 1584      ;
+; Average fan-out                             ; 2.66      ;
 +---------------------------------------------+-----------+
 
 
@@ -198,9 +200,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |NMEA_Interface            ; 92 (92)           ; 84 (84)      ; 0           ; 0            ; 0       ; 0         ; 80   ; 0            ; |NMEA_Interface     ;              ;
+; |NMEA_Interface            ; 197 (197)         ; 234 (234)    ; 0           ; 0            ; 0       ; 0         ; 82   ; 0            ; |NMEA_Interface     ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Data_out[0,10,20,30]                  ; Stuck at GND due to stuck port data_in ;
+; Data_out[9,29,39]                     ; Merged with Data_out[19]               ;
+; Total Number of Removed Registers = 7 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -208,14 +221,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 84    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 234   ;
+; Number of registers using Synchronous Clear  ; 41    ;
 ; Number of registers using Synchronous Load   ; 32    ;
-; Number of registers using Asynchronous Clear ; 83    ;
+; Number of registers using Asynchronous Clear ; 233   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 49    ;
+; Number of registers using Clock Enable       ; 130   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Tx_Pin~reg0                            ; 1       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -223,9 +246,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                   ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------------------------+----------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |NMEA_Interface|cptDivide[7] ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |NMEA_Interface|cptDivide[1] ;                            ;
 ; 8:1                ; 5 bits    ; 25 LEs        ; 15 LEs               ; 10 LEs                 ; |NMEA_Interface|Mux4         ;                            ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; |NMEA_Interface|Mux6         ;                            ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; |NMEA_Interface|Mux5         ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------------------------+----------------------------+
 
 
@@ -244,26 +267,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Nov 12 09:51:57 2020
+    Info: Processing started: Mon Nov 16 10:26:20 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NMEA_Interface -c NMEA_Interface
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file nmea_interface.vhd
     Info (12022): Found design unit 1: NMEA_Interface-rtl
     Info (12023): Found entity 1: NMEA_Interface
 Info (12127): Elaborating entity "NMEA_Interface" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at NMEA_Interface.vhd(60): object "synchro" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at NMEA_Interface.vhd(60): object "centaine" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at NMEA_Interface.vhd(60): object "dizaine" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at NMEA_Interface.vhd(60): object "unite" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(233): signal "fin_transmit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(233): signal "start_stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(233): signal "raz_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(234): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(235): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(236): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(237): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(260): signal "StartBIT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10541): VHDL Signal Declaration warning at NMEA_Interface.vhd(20): used implicit default value for signal "En1Hz" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(339): signal "fin_transmit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(339): signal "start_stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(339): signal "raz_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(340): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(341): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(342): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(343): signal "TRAME" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at NMEA_Interface.vhd(394): signal "StartBIT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (13005): Duplicate registers merged to single register
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "En1Hz" is stuck at GND
     Warning (13410): Pin "readdata[8]" is stuck at GND
     Warning (13410): Pin "readdata[9]" is stuck at GND
     Warning (13410): Pin "readdata[10]" is stuck at GND
@@ -290,12 +314,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "readdata[31]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Warning (21074): Design contains 29 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "writedata[3]"
-    Warning (15610): No output dependent on input pin "writedata[4]"
-    Warning (15610): No output dependent on input pin "writedata[5]"
-    Warning (15610): No output dependent on input pin "writedata[6]"
-    Warning (15610): No output dependent on input pin "writedata[7]"
+Warning (21074): Design contains 24 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "writedata[8]"
     Warning (15610): No output dependent on input pin "writedata[9]"
     Warning (15610): No output dependent on input pin "writedata[10]"
@@ -320,14 +339,14 @@ Warning (21074): Design contains 29 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "writedata[29]"
     Warning (15610): No output dependent on input pin "writedata[30]"
     Warning (15610): No output dependent on input pin "writedata[31]"
-Info (21057): Implemented 215 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 387 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 40 input pins
-    Info (21059): Implemented 40 output pins
-    Info (21061): Implemented 135 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 344 megabytes
-    Info: Processing ended: Thu Nov 12 09:52:02 2020
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 305 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 345 megabytes
+    Info: Processing ended: Mon Nov 16 10:26:26 2020
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

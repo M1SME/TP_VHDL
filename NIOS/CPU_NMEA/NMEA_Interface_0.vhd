@@ -17,7 +17,8 @@ entity NMEA_Interface_0 is
 		readdata   : out std_logic_vector(31 downto 0);                    --               .readdata
 		address    : in  std_logic_vector(2 downto 0)  := (others => '0'); --               .address
 		Rx_Pin     : in  std_logic                     := '0';             --    conduit_end.export
-		LEDs       : out std_logic_vector(7 downto 0)                      --               .export
+		LEDs       : out std_logic_vector(7 downto 0);                     --               .export
+		Tx_Pin     : out std_logic                                         --  conduit_end_1.export
 	);
 end entity NMEA_Interface_0;
 
@@ -32,7 +33,8 @@ architecture rtl of NMEA_Interface_0 is
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
 			address    : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
 			Rx_Pin     : in  std_logic                     := 'X';             -- export
-			LEDs       : out std_logic_vector(7 downto 0)                      -- export
+			LEDs       : out std_logic_vector(7 downto 0);                     -- export
+			Tx_Pin     : out std_logic                                         -- export
 		);
 	end component NMEA_Interface;
 
@@ -48,7 +50,8 @@ begin
 			readdata   => readdata,   --               .readdata
 			address    => address,    --               .address
 			Rx_Pin     => Rx_Pin,     --    conduit_end.export
-			LEDs       => LEDs        --               .export
+			LEDs       => LEDs,       --               .export
+			Tx_Pin     => Tx_Pin      --  conduit_end_1.export
 		);
 
 end architecture rtl; -- of NMEA_Interface_0

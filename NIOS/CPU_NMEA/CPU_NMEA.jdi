@@ -1,6 +1,6 @@
 <sld_project_info>
   <file_info>
-    <file checksum="0x00261D0A" device="EP4CE22F17C6" path="CPU_NMEA.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x0027B912" device="EP4CE22F17C6" path="CPU_NMEA.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info ir_width="2" node_count="2"/>
   <node_info>

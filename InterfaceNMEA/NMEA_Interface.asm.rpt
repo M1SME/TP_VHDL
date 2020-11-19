@@ -1,5 +1,5 @@
 Assembler report for NMEA_Interface
-Thu Nov 12 09:52:19 2020
+Mon Nov 16 10:26:45 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 12 09:52:19 2020 ;
+; Assembler Status      ; Successful - Mon Nov 16 10:26:45 2020 ;
 ; Revision Name         ; NMEA_Interface                        ;
 ; Top-level Entity Name ; NMEA_Interface                        ;
 ; Family                ; Cyclone IV E                          ;
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +----------------+----------------------------------------------------------------------------------+
 ; Device         ; EP4CE22F17C6                                                                     ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                       ;
-; Checksum       ; 0x0014626F                                                                       ;
+; Checksum       ; 0x0015CC34                                                                       ;
 +----------------+----------------------------------------------------------------------------------+
 
 
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Nov 12 09:52:15 2020
+    Info: Processing started: Mon Nov 16 10:26:41 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off NMEA_Interface -c NMEA_Interface
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 343 megabytes
-    Info: Processing ended: Thu Nov 12 09:52:19 2020
+    Info: Peak virtual memory: 344 megabytes
+    Info: Processing ended: Mon Nov 16 10:26:45 2020
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

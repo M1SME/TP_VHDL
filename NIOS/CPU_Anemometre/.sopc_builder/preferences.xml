@@ -18,5 +18,5 @@
  </clocktable>
  <window width="1591" height="791" x="109" y="121" />
  <library
-   expandedCategories="Library/Bridges,Library/Interface Protocols/High Speed,Library/Interface Protocols,Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Project,Library/Peripherals,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/DSP/Video and Image Processing,Library/Bridges/Memory Mapped,Library/Peripherals/Display,Library/Peripherals/Debug and Performance,Library/Memories and Memory Controllers,Library/Legacy Components,Library,Library/Memories and Memory Controllers/External Memory Interfaces,Library/DSP" />
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Interface Protocols,Library/Peripherals/Debug and Performance,Project,Library/Interface Protocols/High Speed,Library/DSP/Video and Image Processing,Library/Bridges/Memory Mapped,Library/Bridges,Library,Library/Peripherals/Display,Library/DSP,Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Library/Legacy Components,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Peripherals,Library/Memories and Memory Controllers" />
 </preferences>

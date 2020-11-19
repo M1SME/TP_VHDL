@@ -1668,7 +1668,8 @@ entity CPU_NMEA is
 
               -- the_NMEA_Interface_0
                  signal LEDs_from_the_NMEA_Interface_0 : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
-                 signal Rx_Pin_to_the_NMEA_Interface_0 : IN STD_LOGIC
+                 signal Rx_Pin_to_the_NMEA_Interface_0 : IN STD_LOGIC;
+                 signal Tx_Pin_from_the_NMEA_Interface_0 : OUT STD_LOGIC
               );
 end entity CPU_NMEA;
 
@@ -1714,6 +1715,7 @@ component NMEA_Interface_0 is
 
                  -- outputs:
                     signal LEDs : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+                    signal Tx_Pin : OUT STD_LOGIC;
                     signal readdata : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
                  );
 end component NMEA_Interface_0;
@@ -2047,6 +2049,7 @@ end component CPU_NMEA_reset_clk_0_domain_synch_module;
                 signal d1_jtag_uart_0_avalon_jtag_slave_end_xfer :  STD_LOGIC;
                 signal d1_onchip_memory2_0_s1_end_xfer :  STD_LOGIC;
                 signal internal_LEDs_from_the_NMEA_Interface_0 :  STD_LOGIC_VECTOR (7 DOWNTO 0);
+                signal internal_Tx_Pin_from_the_NMEA_Interface_0 :  STD_LOGIC;
                 signal jtag_uart_0_avalon_jtag_slave_address :  STD_LOGIC;
                 signal jtag_uart_0_avalon_jtag_slave_chipselect :  STD_LOGIC;
                 signal jtag_uart_0_avalon_jtag_slave_dataavailable :  STD_LOGIC;
@@ -2107,6 +2110,7 @@ begin
   the_NMEA_Interface_0 : NMEA_Interface_0
     port map(
       LEDs => internal_LEDs_from_the_NMEA_Interface_0,
+      Tx_Pin => internal_Tx_Pin_from_the_NMEA_Interface_0,
       readdata => NMEA_Interface_0_avalon_slave_0_readdata,
       Rx_Pin => Rx_Pin_to_the_NMEA_Interface_0,
       address => NMEA_Interface_0_avalon_slave_0_address,
@@ -2370,6 +2374,8 @@ begin
   reset_n_sources <= Vector_To_Std_Logic(NOT (((((std_logic_vector'("0000000000000000000000000000000") & (A_TOSTDLOGICVECTOR(NOT reset_n))) OR std_logic_vector'("00000000000000000000000000000000")) OR (std_logic_vector'("0000000000000000000000000000000") & (A_TOSTDLOGICVECTOR(cpu_0_jtag_debug_module_resetrequest_from_sa)))) OR (std_logic_vector'("0000000000000000000000000000000") & (A_TOSTDLOGICVECTOR(cpu_0_jtag_debug_module_resetrequest_from_sa))))));
   --vhdl renameroo for output signals
   LEDs_from_the_NMEA_Interface_0 <= internal_LEDs_from_the_NMEA_Interface_0;
+  --vhdl renameroo for output signals
+  Tx_Pin_from_the_NMEA_Interface_0 <= internal_Tx_Pin_from_the_NMEA_Interface_0;
 
 end europa;
 
@@ -2406,12 +2412,14 @@ component CPU_NMEA is
 
                  -- the_NMEA_Interface_0
                     signal LEDs_from_the_NMEA_Interface_0 : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
-                    signal Rx_Pin_to_the_NMEA_Interface_0 : IN STD_LOGIC
+                    signal Rx_Pin_to_the_NMEA_Interface_0 : IN STD_LOGIC;
+                    signal Tx_Pin_from_the_NMEA_Interface_0 : OUT STD_LOGIC
                  );
 end component CPU_NMEA;
 
                 signal LEDs_from_the_NMEA_Interface_0 :  STD_LOGIC_VECTOR (7 DOWNTO 0);
                 signal Rx_Pin_to_the_NMEA_Interface_0 :  STD_LOGIC;
+                signal Tx_Pin_from_the_NMEA_Interface_0 :  STD_LOGIC;
                 signal clk :  STD_LOGIC;
                 signal clk_0 :  STD_LOGIC;
                 signal jtag_uart_0_avalon_jtag_slave_dataavailable_from_sa :  STD_LOGIC;
@@ -2430,6 +2438,7 @@ begin
   DUT : CPU_NMEA
     port map(
       LEDs_from_the_NMEA_Interface_0 => LEDs_from_the_NMEA_Interface_0,
+      Tx_Pin_from_the_NMEA_Interface_0 => Tx_Pin_from_the_NMEA_Interface_0,
       Rx_Pin_to_the_NMEA_Interface_0 => Rx_Pin_to_the_NMEA_Interface_0,
       clk_0 => clk_0,
       reset_n => reset_n

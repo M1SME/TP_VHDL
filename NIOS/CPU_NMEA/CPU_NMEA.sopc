@@ -96,8 +96,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="CPU_NMEA.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="-19578030919" />
- <parameter name="timeStamp" value="1605173639381" />
+ <parameter name="systemHash" value="-21050380717" />
+ <parameter name="timeStamp" value="1605519167132" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="11.1" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
@@ -253,9 +253,7 @@
    kind="NMEA_Interface"
    version="1.0"
    enabled="1"
-   name="NMEA_Interface_0">
-  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
- </module>
+   name="NMEA_Interface_0" />
  <connection kind="clock" version="11.1" start="clk_0.clk" end="cpu_0.clk" />
  <connection
    kind="avalon"

@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>12 nov. 2020 10:47:37</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1605174457920</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>16 nov. 2020 10:39:24</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1605519564318</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Cyprien\Documents\GIT\TP_VHDL\NIOS\CPU_NMEA\software\Test3_receptionNMEA_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Cyprien\Documents\GIT\TP_VHDL\NIOS\CPU_NMEA\CPU_NMEA.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu_0</Cpu>

@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 312 176 480 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 312 192 480 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Reset" (rect 5 0 35 12)(font "Arial" ))
+	(text "Reset" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 312 224 480 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Rx_PIN" (rect 5 0 44 12)(font "Arial" ))
+	(text "Rx_PIN" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -83,10 +83,26 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 912 240 1088 256)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Tx_PIN" (rect 90 0 126 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
-	(rect 480 152 912 264)
+	(rect 480 152 912 280)
 	(text "CPU_NMEA" (rect 4 0 88 16)(font "Arial" (font_size 10)))
-	(text "inst" (rect 4 96 21 108)(font "Arial" ))
+	(text "inst" (rect 4 112 21 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -115,8 +131,15 @@ applicable agreement for further details.
 		(text "LEDs_from_the_NMEA_Interface_0[7..0] " (rect 215 73 411 87)(font "Arial" (font_size 8)))
 		(line (pt 416 80)(pt 432 80)(line_width 3))
 	)
+	(port
+		(pt 432 96)
+		(output)
+		(text "Tx_Pin_from_the_NMEA_Interface_0 " (rect 0 0 212 14)(font "Arial" (font_size 8)))
+		(text "Tx_Pin_from_the_NMEA_Interface_0 " (rect 232 89 411 103)(font "Arial" (font_size 8)))
+		(line (pt 416 96)(pt 432 96))
+	)
 	(drawing
 		(line (pt 16 64)(pt 415 64)(color 0 0 0)(dotted))
-		(rectangle (rect 16 16 416 96))
+		(rectangle (rect 16 16 416 112))
 	)
 )

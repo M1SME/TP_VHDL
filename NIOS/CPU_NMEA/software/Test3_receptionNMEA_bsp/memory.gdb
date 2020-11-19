@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu_0' in SOPC Builder design 'CPU_NMEA'
 # SOPC Builder design path: C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/CPU_NMEA.sopcinfo
 #
-# Generated: Thu Nov 12 10:47:38 CET 2020
+# Generated: Mon Nov 16 10:39:25 CET 2020
 
 # DO NOT MODIFY THIS FILE
 #

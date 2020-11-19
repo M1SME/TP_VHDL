@@ -1,7 +1,7 @@
 PACKAGE install2 
 {
    # This file informs the Nios II IDE of non-legacy component paths.
-   # Generated 2020.11.12.10:34:09
+   # Generated 2020.11.16.10:32:53
    COMPONENT NMEA_Interface 
    {
       VERSION 1.0 

@@ -657,7 +657,7 @@ ON
 # case_insensitive
 # source_file
 nmea_interface.vhd
-bf137a19de76b83a6237b1ad2e4d
+ad46baf7fd48f82af7bf72c367e3cfc
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

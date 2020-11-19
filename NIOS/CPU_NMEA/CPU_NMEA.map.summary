@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 12 10:45:45 2020
+Analysis & Synthesis Status : Successful - Mon Nov 16 10:36:32 2020
 Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : CPU_NMEA
 Top-level Entity Name : CPU_NMEA
 Family : Cyclone IV E
-Total logic elements : 1,539
-    Total combinational functions : 1,381
-    Dedicated logic registers : 794
-Total registers : 794
-Total pins : 11
+Total logic elements : 1,718
+    Total combinational functions : 1,497
+    Dedicated logic registers : 943
+Total registers : 943
+Total pins : 12
 Total virtual pins : 0
 Total memory bits : 171,264
 Embedded Multiplier 9-bit elements : 0

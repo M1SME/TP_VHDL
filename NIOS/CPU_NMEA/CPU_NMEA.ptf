@@ -1835,6 +1835,13 @@ SYSTEM CPU_NMEA
       }
       PORT_WIRING 
       {
+         PORT Tx_Pin
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
          PORT Rx_Pin
          {
             type = "export";
