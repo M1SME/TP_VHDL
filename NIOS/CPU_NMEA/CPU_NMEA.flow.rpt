@@ -1,5 +1,5 @@
 Flow report for CPU_NMEA
-Mon Nov 16 10:37:04 2020
+Fri Nov 27 09:57:29 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Flow Summary                                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 16 10:36:59 2020         ;
+; Flow Status                        ; Successful - Fri Nov 27 09:57:24 2020         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CPU_NMEA                                      ;
 ; Top-level Entity Name              ; CPU_NMEA                                      ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/16/2020 10:36:15 ;
+; Start date & time ; 11/27/2020 09:56:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU_NMEA            ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 66659621805650.160551937514832 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 66659621805650.160646738900592 ; --            ; --          ; --         ;
 ; IP_TOOL_ENV                         ; sopc                           ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; sopc                           ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 11.1sp2                        ; --            ; --          ; --         ;
@@ -92,11 +92,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 379 MB              ; 00:00:16                           ;
-; Fitter                    ; 00:00:17     ; 1.0                     ; 460 MB              ; 00:00:17                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 348 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 358 MB              ; 00:00:09                           ;
-; Total                     ; 00:00:48     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 378 MB              ; 00:00:17                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 460 MB              ; 00:00:18                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 348 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 358 MB              ; 00:00:09                           ;
+; Total                     ; 00:01:01     ; --                      ; --                  ; 00:00:49                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -27,6 +27,12 @@ int main()
 
 	  alt_putstr("Initialisation Module NMEA \n");
 
+	  *Config = 0x2;    // Mode continu*/
+	  *Synchro = 0x61 ;
+	  *Centaine = 0x62;
+	  *Dizaine = 0x63;
+	  *unite = 0x64;
+
   while (1){
 
 

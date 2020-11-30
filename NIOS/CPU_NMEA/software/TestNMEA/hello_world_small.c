@@ -29,9 +29,9 @@ int main()
 
 	  *Config = 0x2;    // Mode continu*/
 	  *unite  = 0x61;
-	  *Synchro = 0x62;
+	  *Synchro = 0x64;
 	  *Centaine = 0x63;
-	  *Dizaine = 0x64;
+	  *Dizaine = 0x62;
 
   while (1){
 

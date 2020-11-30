@@ -12,20 +12,14 @@
 
 int main()
 { 
-	/*int data_valid = 0;
-	unsigned int  donnees_anemo = 0;
-	int vitesse = 0;
-	  alt_putstr("Initialisation AVALLON PWM \n");
-
-	  *freq = 0x4c4b40; // divise clk par 5 000 000 donc Freq = 10Hz
-	  *duty = 0x2625a0; // RC = 50%
-	  *ctrl = 0x3;
-
-  alt_putstr("Initialisation Module ANEMOMETRE \n");
-
-  	  *Config = 0x2;    // Mode continu*/
 
 	  alt_putstr("Initialisation Module NMEA \n");
+
+	  *Config = 0x2;    // Mode continu*/
+	  *Synchro = 0x61 ;
+	  *Centaine = 0x64;
+	  *Dizaine = 0x63;
+	  *unite = 0x62;
 
   while (1){
 

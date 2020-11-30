@@ -5,15 +5,4 @@ make all
 Info: Building ../TestNMEA_bsp/
 make --no-print-directory -C ../TestNMEA_bsp/
 [BSP build complete]
-Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -I../TestNMEA_bsp//HAL/inc -I../TestNMEA_bsp/ -I../TestNMEA_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
-hello_world_small.c: In function 'main':
-hello_world_small.c:39: warning: suggest parentheses around comparison in operand of &
-Info: Linking TestNMEA.elf
-nios2-elf-g++  -T'../TestNMEA_bsp//linker.x' -msys-crt0='../TestNMEA_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../TestNMEA_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=TestNMEA.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o TestNMEA.elf obj/default/hello_world_small.o -lm 
-nios2-elf-insert TestNMEA.elf --thread_model hal --cpu_name cpu_0 --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name CPU_NMEA --quartus_project_dir "C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA" --jdi C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/CPU_NMEA.jdi
-Info: (TestNMEA.elf) 3792 Bytes program size (code + initialized data).
-Info:                15 KBytes free for stack + heap.
-Info: Creating TestNMEA.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source TestNMEA.elf >TestNMEA.objdump
 [TestNMEA build complete]

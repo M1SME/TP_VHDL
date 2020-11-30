@@ -291,16 +291,16 @@ int main()
     8084:	00c01844 	movi	r3,97
     8088:	10800404 	addi	r2,r2,16
     808c:	10c00015 	stw	r3,0(r2)
-	  *Synchro = 0x62;
-    8090:	00c01884 	movi	r3,98
+	  *Synchro = 0x64;
+    8090:	00c01904 	movi	r3,100
     8094:	10bffd04 	addi	r2,r2,-12
     8098:	10c00015 	stw	r3,0(r2)
 	  *Centaine = 0x63;
     809c:	00c018c4 	movi	r3,99
     80a0:	10800104 	addi	r2,r2,4
     80a4:	10c00015 	stw	r3,0(r2)
-	  *Dizaine = 0x64;
-    80a8:	00c01904 	movi	r3,100
+	  *Dizaine = 0x62;
+    80a8:	00c01884 	movi	r3,98
     80ac:	10800104 	addi	r2,r2,4
     80b0:	10c00015 	stw	r3,0(r2)
 
@@ -316,7 +316,7 @@ int main()
 		  alt_putstr("Synchro  = 0x ");
     80c0:	01000074 	movhi	r4,1
     80c4:	21236304 	addi	r4,r4,-29300
-	  *Dizaine = 0x64;
+	  *Dizaine = 0x62;
 
   while (1){
 

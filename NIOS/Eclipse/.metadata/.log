@@ -1311,3 +1311,152 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-11-17 15:02:03.134
 !MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+!SESSION 2020-11-27 09:30:09.110 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 10:01:06.728
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 10:01:12.537
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 10:01:12.731
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:01:35.464
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:01:50.317
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:01:59.277
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:01:59.397
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:05:09.488
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:05:11.662
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:05:18.004
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:05:18.108
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:12:13.425
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:12:15.254
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:12:21.671
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:12:21.795
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:12:28.522
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --go, --accept-bad-sysid, /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:12:28.526
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:12:46.995
+!MESSAGE Cannot initialize the Nios II Console view for use. Byte stream service may still be open by another process like 'nios2-terminal'.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:13:25.340
+!MESSAGE Cannot initialize the Nios II Console view for use. Byte stream service may still be open by another process like 'nios2-terminal'.
+!SESSION 2020-11-27 11:13:44.284 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:27:11.185
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:27:17.320
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:27:17.400
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:27:23.987
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --go, --accept-bad-sysid, /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:27:24.014
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:27:56.356
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:28:02.646
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:28:02.744
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:28:08.278
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --go, --accept-bad-sysid, /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:28:08.280
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:29:46.817
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:29:53.494
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:29:53.575
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:29:59.051
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-1]', --device=1, --instance=0, --go, --accept-bad-sysid, /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:29:59.053
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:30:36.125
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:30:42.236
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:30:42.309
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:32:00.576
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:32:02.682
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:32:08.602
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:32:08.739
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:33:15.396
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:33:17.253
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=Not Found]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-11-27 11:33:24.061
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=Not Found] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-27 11:33:24.209
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid /cygdrive/c/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/software/TestNMEA/TestNMEA.elf]
