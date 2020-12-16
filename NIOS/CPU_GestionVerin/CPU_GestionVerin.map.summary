@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 16 15:00:47 2020
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Revision Name : CPU_GestionVerin
+Top-level Entity Name : CPU_GestionVerin
+Family : Cyclone IV E
+Total logic elements : 1,729
+    Total combinational functions : 1,522
+    Dedicated logic registers : 870
+Total registers : 870
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 171,264
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

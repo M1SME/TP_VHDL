@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU_NMEA
-Fri Nov 27 09:56:52 2020
+Sat Dec 12 20:42:14 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -99,7 +99,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 27 09:56:52 2020         ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 12 20:42:14 2020         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CPU_NMEA                                      ;
 ; Top-level Entity Name              ; CPU_NMEA                                      ;
@@ -212,60 +212,59 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                 ;
-+------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path                                 ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                             ;
-+------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+
-; NMEA_Interface.vhd                                               ; yes             ; User VHDL File                         ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/NMEA_Interface.vhd                  ;
-; NMEA_Interface_0.vhd                                             ; yes             ; User VHDL File                         ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/NMEA_Interface_0.vhd                ;
-; cpu_nmea.vhd                                                     ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_nmea.vhd                        ;
-; cpu_0.vhd                                                        ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0.vhd                           ;
-; cpu_0_test_bench.vhd                                             ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_test_bench.vhd                ;
-; altsyncram.tdf                                                   ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altsyncram.tdf                         ;
-; stratix_ram_block.inc                                            ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;
-; lpm_mux.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/lpm_mux.inc                            ;
-; lpm_decode.inc                                                   ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/lpm_decode.inc                         ;
-; aglobal111.inc                                                   ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/aglobal111.inc                         ;
-; a_rdenreg.inc                                                    ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_rdenreg.inc                          ;
-; altrom.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altrom.inc                             ;
-; altram.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altram.inc                             ;
-; altdpram.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altdpram.inc                           ;
-; db/altsyncram_hff1.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_hff1.tdf              ;
-; cpu_0_rf_ram_a.mif                                               ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_rf_ram_a.mif                  ;
-; db/altsyncram_iff1.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_iff1.tdf              ;
-; cpu_0_rf_ram_b.mif                                               ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_rf_ram_b.mif                  ;
-; db/altsyncram_u972.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_u972.tdf              ;
-; cpu_0_ociram_default_contents.mif                                ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_ociram_default_contents.mif   ;
-; cpu_0_oci_test_bench.vhd                                         ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_oci_test_bench.vhd            ;
-; db/altsyncram_0a02.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_0a02.tdf              ;
-; cpu_0_jtag_debug_module_wrapper.vhd                              ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_jtag_debug_module_wrapper.vhd ;
-; cpu_0_jtag_debug_module_tck.vhd                                  ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_jtag_debug_module_tck.vhd     ;
-; altera_std_synchronizer.v                                        ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altera_std_synchronizer.v              ;
-; cpu_0_jtag_debug_module_sysclk.vhd                               ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_jtag_debug_module_sysclk.vhd  ;
-; sld_virtual_jtag_basic.v                                         ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v               ;
-; jtag_uart_0.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/jtag_uart_0.vhd                     ;
-; scfifo.tdf                                                       ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/scfifo.tdf                             ;
-; a_regfifo.inc                                                    ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_regfifo.inc                          ;
-; a_dpfifo.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_dpfifo.inc                           ;
-; a_i2fifo.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_i2fifo.inc                           ;
-; a_fffifo.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_fffifo.inc                           ;
-; a_f2fifo.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_f2fifo.inc                           ;
-; db/scfifo_jr21.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/scfifo_jr21.tdf                  ;
-; db/a_dpfifo_q131.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/a_dpfifo_q131.tdf                ;
-; db/a_fefifo_7cf.tdf                                              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/a_fefifo_7cf.tdf                 ;
-; db/cntr_do7.tdf                                                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/cntr_do7.tdf                     ;
-; db/dpram_nl21.tdf                                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/dpram_nl21.tdf                   ;
-; db/altsyncram_r1m1.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_r1m1.tdf              ;
-; db/cntr_1ob.tdf                                                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/cntr_1ob.tdf                     ;
-; alt_jtag_atlantic.v                                              ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/alt_jtag_atlantic.v                    ;
-; onchip_memory2_0.vhd                                             ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/onchip_memory2_0.vhd                ;
-; db/altsyncram_08c1.tdf                                           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_08c1.tdf              ;
-; onchip_memory2_0.hex                                             ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/onchip_memory2_0.hex                ;
-; sld_hub.vhd                                                      ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_hub.vhd                            ;
-; sld_rom_sr.vhd                                                   ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_rom_sr.vhd                         ;
-; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/sysid_0.vhd ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/sysid_0.vhd                         ;
-+------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++-------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                             ;
++-------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+
+; NMEA_Interface.vhd                  ; yes             ; User VHDL File                         ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/NMEA_Interface.vhd                  ;
+; NMEA_Interface_0.vhd                ; yes             ; User VHDL File                         ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/NMEA_Interface_0.vhd                ;
+; cpu_nmea.vhd                        ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_nmea.vhd                        ;
+; cpu_0.vhd                           ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0.vhd                           ;
+; cpu_0_test_bench.vhd                ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_test_bench.vhd                ;
+; altsyncram.tdf                      ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altsyncram.tdf                         ;
+; stratix_ram_block.inc               ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;
+; lpm_mux.inc                         ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/lpm_mux.inc                            ;
+; lpm_decode.inc                      ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/lpm_decode.inc                         ;
+; aglobal111.inc                      ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/aglobal111.inc                         ;
+; a_rdenreg.inc                       ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_rdenreg.inc                          ;
+; altrom.inc                          ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altrom.inc                             ;
+; altram.inc                          ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altram.inc                             ;
+; altdpram.inc                        ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altdpram.inc                           ;
+; db/altsyncram_hff1.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_hff1.tdf              ;
+; cpu_0_rf_ram_a.mif                  ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_rf_ram_a.mif                  ;
+; db/altsyncram_iff1.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_iff1.tdf              ;
+; cpu_0_rf_ram_b.mif                  ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_rf_ram_b.mif                  ;
+; db/altsyncram_u972.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_u972.tdf              ;
+; cpu_0_ociram_default_contents.mif   ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_ociram_default_contents.mif   ;
+; cpu_0_oci_test_bench.vhd            ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_oci_test_bench.vhd            ;
+; db/altsyncram_0a02.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_0a02.tdf              ;
+; cpu_0_jtag_debug_module_wrapper.vhd ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_jtag_debug_module_wrapper.vhd ;
+; cpu_0_jtag_debug_module_tck.vhd     ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_jtag_debug_module_tck.vhd     ;
+; altera_std_synchronizer.v           ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/altera_std_synchronizer.v              ;
+; cpu_0_jtag_debug_module_sysclk.vhd  ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/cpu_0_jtag_debug_module_sysclk.vhd  ;
+; sld_virtual_jtag_basic.v            ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v               ;
+; jtag_uart_0.vhd                     ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/jtag_uart_0.vhd                     ;
+; scfifo.tdf                          ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/scfifo.tdf                             ;
+; a_regfifo.inc                       ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_regfifo.inc                          ;
+; a_dpfifo.inc                        ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_dpfifo.inc                           ;
+; a_i2fifo.inc                        ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_i2fifo.inc                           ;
+; a_fffifo.inc                        ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_fffifo.inc                           ;
+; a_f2fifo.inc                        ; yes             ; Megafunction                           ; c:/altera/11.1sp2/quartus/libraries/megafunctions/a_f2fifo.inc                           ;
+; db/scfifo_jr21.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/scfifo_jr21.tdf                  ;
+; db/a_dpfifo_q131.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/a_dpfifo_q131.tdf                ;
+; db/a_fefifo_7cf.tdf                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/a_fefifo_7cf.tdf                 ;
+; db/cntr_do7.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/cntr_do7.tdf                     ;
+; db/dpram_nl21.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/dpram_nl21.tdf                   ;
+; db/altsyncram_r1m1.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_r1m1.tdf              ;
+; db/cntr_1ob.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/cntr_1ob.tdf                     ;
+; alt_jtag_atlantic.v                 ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/alt_jtag_atlantic.v                    ;
+; onchip_memory2_0.vhd                ; yes             ; Auto-Found VHDL File                   ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/onchip_memory2_0.vhd                ;
+; db/altsyncram_08c1.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/db/altsyncram_08c1.tdf              ;
+; onchip_memory2_0.hex                ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Cyprien/Documents/GIT/TP_VHDL/NIOS/CPU_NMEA/onchip_memory2_0.hex                ;
+; sld_hub.vhd                         ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_hub.vhd                            ;
+; sld_rom_sr.vhd                      ; yes             ; Encrypted Megafunction                 ; c:/altera/11.1sp2/quartus/libraries/megafunctions/sld_rom_sr.vhd                         ;
++-------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -1534,7 +1533,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -1544,8 +1543,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Nov 27 09:56:26 2020
+    Info: Processing started: Sat Dec 12 20:41:56 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU_NMEA -c CPU_NMEA
+Critical Warning (138067): Current license file does not support incremental compilation. The Quartus II software removes all the user-specified design partitions in the design automatically.
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file nmea_interface.vhd
     Info (12022): Found design unit 1: NMEA_Interface-rtl
@@ -2018,10 +2018,10 @@ Info (21057): Implemented 1926 device resources after synthesis - the final reso
     Info (21059): Implemented 10 output pins
     Info (21061): Implemented 1765 logic cells
     Info (21064): Implemented 144 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 87 warnings
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 88 warnings
     Info: Peak virtual memory: 378 megabytes
-    Info: Processing ended: Fri Nov 27 09:56:52 2020
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Processing ended: Sat Dec 12 20:42:15 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
 
 

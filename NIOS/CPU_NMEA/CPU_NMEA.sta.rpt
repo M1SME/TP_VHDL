@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for CPU_NMEA
-Fri Nov 27 09:57:30 2020
+Sat Dec 12 20:42:49 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -136,7 +136,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; cpu_0.sdc     ; OK     ; Fri Nov 27 09:57:22 2020 ;
+; cpu_0.sdc     ; OK     ; Sat Dec 12 20:42:42 2020 ;
 +---------------+--------+--------------------------+
 
 
@@ -2452,13 +2452,14 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Nov 27 09:57:18 2020
+    Info: Processing started: Sat Dec 12 20:42:39 2020
 Info: Command: quartus_sta CPU_NMEA -c CPU_NMEA
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Core supply voltage is 1.2V
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
+Critical Warning (138067): Current license file does not support incremental compilation. The Quartus II software removes all the user-specified design partitions in the design automatically.
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity alt_jtag_atlantic
         Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|jupdate}] -to [get_registers {*|alt_jtag_atlantic:*|jupdate1*}] 
@@ -2608,10 +2609,10 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 10.8
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 16 warnings
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 17 warnings
     Info: Peak virtual memory: 358 megabytes
-    Info: Processing ended: Fri Nov 27 09:57:30 2020
-    Info: Elapsed time: 00:00:12
+    Info: Processing ended: Sat Dec 12 20:42:49 2020
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:09
 
 

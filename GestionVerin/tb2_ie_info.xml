@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 0X670E7B9A</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x670e7b99: QtCore4 + 0xe7b99 (?hasText@QMimeData@@QBE_NXZ + 0x39)
+	 0x7679e0c1: ole32 + 0x7e0c1 (CreateDataCache + 0x4a71)
+	 0x7679e1f5: ole32 + 0x7e1f5 (CreateDataCache + 0x4ba5)
+	 0x76766421: ole32 + 0x46421 (DllRegisterServer + 0xab51)
+	 0x755547aa: USER32 + 0x447aa (AddClipboardFormatListener + 0x4a)
+	 0x755352ab: USER32 + 0x252ab (CallWindowProcW + 0xb2b)
+	 0x75534e49: USER32 + 0x24e49 (CallWindowProcW + 0x6c9)
+	 0x7553e4ce: USER32 + 0x2e4ce (IsRectEmpty + 0x1fe)
+	 0x7797537c: ntdll + 0x7537c (KiUserCallbackDispatcher + 0x4c)
+	 0x7679cbd5: ole32 + 0x7cbd5 (CreateDataCache + 0x3585)
+	 0x767605b1: ole32 + 0x405b1 (DllRegisterServer + 0x4ce1)
+	 0x7674391b: ole32 + 0x2391b (OleFlushClipboard + 0x4b)
+	 0x6507aba2: QtGui4 + 0x7aba2 (?event@QClipboard@@MAE_NPAVQEvent@@@Z + 0x42)
+	 0x670dba1c: QtCore4 + 0xdba1c (?notifyInternal@QCoreApplication@@AAE_NPAVQObject@@PAVQEvent@@@Z + 0x8c)
+	 0x670dc495: QtCore4 + 0xdc495 (?sendEvent@QCoreApplication@@SA_NPAVQObject@@PAVQEvent@@@Z + 0x25)
+	 0x6501b03a: QtGui4 + 0x1b03a (??1QApplication@@UAE@XZ + 0x6a)
+	  0x2302bfc: GCL_AFCQ + 0x2bfc (??1AFCQ_APP@@UAE@XZ + 0x2c)
+	  0x25f514f: SYS_QUI + 0x1514f (??1QUI_APP@@UAE@XZ + 0x3f)
+	   0x4010eb: quartus + 0x10eb (?qgq_main@@YAHHPAPBD@Z + 0xeb)
+	  0x2281c61: CCL_MSG + 0x1c61 (?msg_main_thread@@YAPAXPAX@Z + 0x11)
+	  0x2741be8: ccl_thr + 0x1be8 (_thr_final_wrapper + 0x8)
+	  0x2281bd5: CCL_MSG + 0x1bd5 (?msg_thread_wrapper@@YAPAXP6APAXPAX@Z0@Z + 0x85)
+	   0x5f429a: ccl_mem + 0x429a (?mem_thread_wrapper@@YAPAXP6APAXPAX@Z0@Z + 0x4a)
+	  0x22ab5d1: CCL_MSG + 0x2b5d1 (?msg_exe_main@@YAHHPAPBDP6AHH0@Z@Z + 0x81)
+	   0x40112c: quartus + 0x112c (_main + 0x1c)
+	   0x401c97: quartus + 0x1c97 (_WinMain@16 + 0xb7)
+	   0x40137e: quartus + 0x137e (_atexit + 0x1a1)
+	 0x77816358: KERNEL32 + 0x16358 (BaseThreadInitThunk + 0x18)
+	 0x77968943: ntdll + 0x68943 (RtlGetAppContainerNamedObjectPath + 0xe3)
+	 0x77968913: ntdll + 0x68913 (RtlGetAppContainerNamedObjectPath + 0xb3)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2020/12/16 10:17:16</DateInvoked>
+		<ElapsedTime>15842</ElapsedTime>
+		<IP>10.188.30.211</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>1992</CPUSpeed>
+			<Hostname>DESKTOP-0QV9UDN</Hostname>
+			<NIC>
+				<Address>3ca067141e52</Address>
+			</NIC>
+			<NIC>
+				<Address>0090f5b51afe</Address>
+			</NIC>
+			<NIC>
+				<Address>3ca06713adc8</Address>
+			</NIC>
+			<NIC>
+				<Address>3ea06713adc8</Address>
+			</NIC>
+			<NIC>
+				<Address>3ca06713adc8</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>622597577470.159907323307012</InstallationID>
+			<Version>
+				<Build>259</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>2</ServicePack>
+				<VersionNumber>11.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>622597577470.15990730840938</UserID>
+			<UserName>Cyprien</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2011-08-26</SchemaVersion>
+</ProgramExecution>
+

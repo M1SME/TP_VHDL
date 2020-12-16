@@ -48,7 +48,7 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name QIP_FILE CPU_NMEA.qip
 set_global_assignment -name BDF_FILE Top.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
@@ -64,4 +64,6 @@ set_location_assignment PIN_L3 -to LEDs_from_the_NMEA_Interface_0[7]
 set_location_assignment PIN_D3 -to reset_n
 set_location_assignment PIN_C3 -to Rx_Pin_to_the_NMEA_Interface_0
 set_location_assignment PIN_A3 -to Tx_Pin_from_the_NMEA_Interface_0
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE TestAnalyseur.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

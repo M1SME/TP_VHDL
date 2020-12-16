@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Nov 16 10:26:25 2020
+Analysis & Synthesis Status : Successful - Sun Dec 13 18:37:17 2020
 Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : NMEA_Interface
 Top-level Entity Name : NMEA_Interface
 Family : Cyclone IV E
-Total logic elements : 304
-    Total combinational functions : 197
-    Dedicated logic registers : 234
-Total registers : 234
+Total logic elements : 1,056
+    Total combinational functions : 715
+    Dedicated logic registers : 763
+Total registers : 763
 Total pins : 82
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 524,288
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

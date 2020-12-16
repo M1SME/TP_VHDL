@@ -1,5 +1,5 @@
-#Mon Nov 16 10:41:13 CET 2020
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_NMEA\\software\\TestNMEA
-newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_NMEA\\CPU_NMEA.sopcinfo
+#Wed Dec 16 15:02:30 CET 2020
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_GestionVerin\\software\\Test1
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_GestionVerin\\CPU_GestionVerin.sopcinfo
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_NMEA\\software\\TestNMEA_bsp
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\Cyprien\\Documents\\GIT\\TP_VHDL\\NIOS\\CPU_GestionVerin\\software\\Test1_bsp

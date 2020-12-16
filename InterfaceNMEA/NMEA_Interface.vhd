@@ -301,7 +301,7 @@ process_write: process (clk, reset_n )
 	begin
 		if reset_n  = '0' then
 			raz_n <= '0';
-			start_stop <= '0';
+			start_stop <= '1';
 			synchro <= (others => '0');
 			unite <= (others => '0');
 			centaine <= (others => '0');
